@@ -2,7 +2,6 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import RemoveRedEyeRoundedIcon from '@mui/icons-material/RemoveRedEyeRounded';
-import DiamondRoundedIcon from '@mui/icons-material/DiamondRounded';
 import AdjustRoundedIcon from '@mui/icons-material/AdjustRounded';
 import theme from '../../../theme/theme';
 const MVV = () => {

@@ -1,6 +1,5 @@
 import { Box, Grid } from '@mui/material'
 import SumCard from '../../shared/SumCard'
-import theme from '../../../theme/theme'
 
 const DoctorsAndFeatures = () => {
   return (
