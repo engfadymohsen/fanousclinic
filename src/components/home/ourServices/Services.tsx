@@ -7,16 +7,19 @@ const Services = () => {
 
   const services = [
     {
+      id: '1',
       imgSrc: './assets/welcome.jpg',
       title: 'Service 1',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat repudiandae nam quidem voluptatum quam est in porro repellendus quo suscipit officiis iste asperiores, velit cupiditate quae possimus accusantium maxime.'
     },
     {
+      id: '2',
       imgSrc: './assets/welcome.jpg',
       title: 'Service 2',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat repudiandae nam quidem voluptatum quam est in porro repellendus quo suscipit officiis iste asperiores, velit cupiditate quae possimus accusantium maxime.'
     },
     {
+      id: '3',
       imgSrc: './assets/welcome.jpg',
       title: 'Service 3',
       content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor repellat repudiandae nam quidem voluptatum quam est in porro repellendus quo suscipit officiis iste asperiores, velit cupiditate quae possimus accusantium maxime.'
@@ -31,7 +34,7 @@ const Services = () => {
       <Box sx={{width:'90%', margin:'0 auto'}}>
          <Grid container spacing={3}>
           {services.map((service)=>(
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={4} key={service.id}>
                   <Box sx={{minHeight:'60vh', display:'flex',flexDirection:'column', alignItems:'center', borderRadius:'15px', border:'1px solid #41bbcb'}}>
                       <Box component='img' src={service.imgSrc} alt='' sx={{width:'100%', borderTopRightRadius:'15px', borderTopLeftRadius:'15px'}}></Box>
                       <Box sx={{padding:'20px', color:'white'}}>
