@@ -6,6 +6,7 @@ import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedIn from '@mui/icons-material/LinkedIn';
 import theme from '../../../theme/theme';
 const Footer = () => {
   return (
@@ -35,8 +36,8 @@ const Footer = () => {
               <Box sx={{display:'flex', justifyContent:'space-between', width:'37%', marginBottom:'1rem'}}>
                 <Link href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{color:'white'}}/></Link>
                 <Link href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{color:'white'}}/></Link>
-                <Link href="https://www.x.com" target="_blank" rel="noopener"><TwitterIcon sx={{color:'white'}}/></Link>
-                <Link href="https://www.tiktok.com/fanous.clinic" target="_blank" rel="noopener">
+                <Link href="http://www.linkedin.com/company/fanousclinic" target="_blank" rel="noopener"><LinkedIn sx={{color:'white'}}/></Link>
+                <Link href="https://www.tiktok.com/@fanous.clinic" target="_blank" rel="noopener">
                   <SvgIcon sx={{color:'white'}}><FontAwesomeIcon icon={faTiktok}/></SvgIcon>
                 </Link>
                 
