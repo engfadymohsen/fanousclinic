@@ -33,10 +33,10 @@ const Footer = () => {
           <Grid item xs={12} md={6} sx={{display:'flex', alignItems:'center', justifyContent:'center'}}>
             <Box sx={{display:'flex', flexDirection:'column'}}>
               <Box sx={{display:'flex', justifyContent:'space-between', width:'37%', marginBottom:'1rem'}}>
-                <Link href="https://www.facebook.com" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{color:'white'}}/></Link>
-                <Link href="https://www.instagram.com" target="_blank" rel="noopener"><InstagramIcon sx={{color:'white'}}/></Link>
+                <Link href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{color:'white'}}/></Link>
+                <Link href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{color:'white'}}/></Link>
                 <Link href="https://www.x.com" target="_blank" rel="noopener"><TwitterIcon sx={{color:'white'}}/></Link>
-                <Link href="https://www.tiktok.com" target="_blank" rel="noopener">
+                <Link href="https://www.tiktok.com/fanous.clinic" target="_blank" rel="noopener">
                   <SvgIcon sx={{color:'white'}}><FontAwesomeIcon icon={faTiktok}/></SvgIcon>
                 </Link>
                 
