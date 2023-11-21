@@ -1,13 +1,13 @@
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import AndroidIcon from '@mui/icons-material/Android';
 import AppleIcon from '@mui/icons-material/Apple';
 import theme from '../../../theme/theme';
+import { Link } from '@mui/material';
 const Welcome = () => {
-  console.log(theme.body_font)
   return (
     <Box sx={{
         backgroundImage:'url(./assets/welcome.jpg)',
@@ -43,9 +43,9 @@ const Welcome = () => {
               </Box>
             </Box>
             <Box sx={{display:'flex'}}>
-              <InstagramIcon sx={{marginRight:'10px', }}/>
-              <WhatsAppIcon sx={{marginRight:'10px', }}/>
-              <MailOutlineIcon sx={{marginRight:'10px', }}/>
+            <Link href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
+            <Link href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
+            <Link href="mailto:marketing@fanousclinic.com" target="_blank" rel="noopener"><MailOutlineIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
             </Box>
           </Box>
         </Box>

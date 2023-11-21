@@ -1,5 +1,5 @@
 import { Box, Typography } from '@mui/material'
-import { Link } from 'react-router-dom'
+import { Link } from '@mui/material';
 import PrimaryBtn from '../../shared/PrimaryBtn'
 import theme from '../../../theme/theme'
 
@@ -22,7 +22,7 @@ const AboutUsSum = () => {
           </Typography>
         </Box>
         <Box sx={{marginTop:'10%'}}>
-          <Link to='aboutus'>
+          <Link href='aboutus'>
             <PrimaryBtn content='Read More' />
           </Link>
         </Box>

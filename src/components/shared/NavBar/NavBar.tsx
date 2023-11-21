@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -30,12 +30,12 @@ function NavBar() {
     <AppBar position="static" sx={{backgroundColor:'white', color:'black', padding:'10px 10px', boxShadow:'none'}}>
       <Container maxWidth="xl" id='nav'>
         <Toolbar disableGutters sx={{justifyContent:'center'}}>
-          <Link to='/'>
+          <Link href='/'>
             <Box component='img' src='./assets/hlogo.png ' alt='' sx={{width:'12rem', display: { xs: 'none', md: 'flex' }, mr: 1 }}></Box>
           </Link>
           <Box sx={{ flexGrow: 0, display: { xs: 'none', md: 'flex' } ,justifyContent:'flex-end', alignItems:'center', width:'60%'}}>
               {pages.map((page) => (
-                <Link to={page.toLowerCase() === 'home' ? '/' : `/${page.toLowerCase().replace(/\s/g, '')}`} style={{textDecoration:'none'}} >
+                <Link href={page.toLowerCase() === 'home' ? '/' : `/${page.toLowerCase().replace(/\s/g, '')}`} style={{textDecoration:'none'}} >
                   <Button
                   key={page}
                   id={page}
@@ -48,7 +48,7 @@ function NavBar() {
               ))}
           </Box>
           <Box sx={{ flexGrow: 1,justifyContent:'space-between', display: { xs: 'flex', md: 'none' } }}>
-            <Link to='/'>
+            <Link href='/'>
               <Box component='img' src='./assets/logo.png ' alt='' sx={{width:'10rem', display: { xs: 'flex', md: 'none' }, mr: 1 }}></Box>
             </Link>
             <IconButton
@@ -81,7 +81,7 @@ function NavBar() {
                 }}
               >
                 {pages.map((page) => (
-                  <Link to={page.toLowerCase() === 'home' ? '/' : `/${page.toLowerCase().replace(/\s/g, '')}`} style={{textDecoration:'none'}} >
+                  <Link href={page.toLowerCase() === 'home' ? '/' : `/${page.toLowerCase().replace(/\s/g, '')}`} style={{textDecoration:'none'}} >
                     <MenuItem key={page} onClick={handleCloseNavMenu}>
                         <Typography textAlign="center" sx={{color:theme.primary_color}}>
                           {page}
