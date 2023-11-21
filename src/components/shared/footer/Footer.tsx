@@ -42,7 +42,7 @@ const Footer = () => {
                 <Link href="https://www.tiktok.com/fanous.clinic" target="_blank" rel="noopener">
                   <SvgIcon sx={{color:'white'}}><FontAwesomeIcon icon={faTiktok}/></SvgIcon>
                 </Link>
-                <Link href="https://www.youtube.com/@fanousclinic" target="_blank" rel="noopener"><YouTubeIcon sx={{color:'white'}}/></Link>
+                <Link href="https://www.youtube.com/@fanousclinic" target="_blank" rel="noopener"><YouTubeIcon sx={{color:'White'}}/></Link>
                 
               </Box>
               <Box sx={{color:'white'}}>
