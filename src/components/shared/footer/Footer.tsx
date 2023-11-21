@@ -5,8 +5,14 @@ import { faTiktok } from '@fortawesome/free-brands-svg-icons'
 
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import InstagramIcon from '@mui/icons-material/Instagram';
+<<<<<<< HEAD
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedIn from '@mui/icons-material/LinkedIn';
+=======
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+
+>>>>>>> 5d364b61719f3533dd3be9e17c3c30d2984b3266
 import theme from '../../../theme/theme';
 const Footer = () => {
   return (
@@ -36,11 +42,16 @@ const Footer = () => {
               <Box sx={{display:'flex', justifyContent:'space-between', width:'37%', marginBottom:'1rem'}}>
                 <Link href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{color:'white'}}/></Link>
                 <Link href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{color:'white'}}/></Link>
+<<<<<<< HEAD
                 <Link href="http://www.linkedin.com/company/fanousclinic" target="_blank" rel="noopener"><LinkedIn sx={{color:'white'}}/></Link>
                 <Link href="https://www.tiktok.com/@fanous.clinic" target="_blank" rel="noopener">
+=======
+                <Link href="http://www.linkedin.com/company/fanousclinic" target="_blank" rel="noopener"><LinkedInIcon sx={{color:'white'}}/></Link>
+                <Link href="https://www.tiktok.com/fanous.clinic" target="_blank" rel="noopener">
+>>>>>>> 5d364b61719f3533dd3be9e17c3c30d2984b3266
                   <SvgIcon sx={{color:'white'}}><FontAwesomeIcon icon={faTiktok}/></SvgIcon>
                 </Link>
-                
+                <Link href="https://www.youtube.com/@fanousclinic" target="_blank" rel="noopener"><YouTubeIcon sx={{color:'White'}}/></Link>      
               </Box>
               <Box sx={{color:'white'}}>
                 <Typography sx={{ fontWeight:'600', marginBottom:'0.3rem',fontSize:theme.body_font}}>Fanous Clinic</Typography>
