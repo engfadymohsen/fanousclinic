@@ -29,7 +29,7 @@ function NavBar() {
   return (
     <AppBar position="static" sx={{backgroundColor:'white', color:'black', padding:'10px 10px', boxShadow:'none'}}>
       <Container maxWidth="xl" id='nav'>
-        <Toolbar disableGutters sx={{justifyContent:'center'}}>
+        <Toolbar disableGutters sx={{justifyContent:'space-between'}}>
           <Link to='/'>
             <Box component='img' src='./assets/hlogo.png ' alt='' sx={{width:'12rem', display: { xs: 'none', md: 'flex' }, mr: 1 }}></Box>
           </Link>
@@ -40,7 +40,7 @@ function NavBar() {
                   key={page}
                   id={page}
                   onClick={(e)=>handleCloseNavMenu(e.target)}
-                  sx={{ my: 2, color: 'black', display: 'block',fontSize:theme.body_font}}
+                  sx={{ my: 2, color: 'black', display: 'block',fontSize:'1.1rem'}}
                   >
                   {page}
                   </Button>

@@ -19,7 +19,7 @@ const MVV = () => {
                     <AdjustRoundedIcon sx={{color:theme.primary_color, fontSize:'10rem'}} />
                     <Typography sx={{fontSize:'2rem', fontWeight:'700'}}>Mission</Typography>
                     <Box sx={{width:'50%', height:'2px', backgroundColor:theme.sec_color}}></Box>
-                    <Typography sx={{textAlign:'justify', color:theme.primary_color, marginTop:'2.5rem', fontSize:theme.body_font}}>
+                    <Typography sx={{textAlign:'justify', color:theme.primary_color, marginTop:'2.5rem', fontSize:theme.body_font, hyphens: 'auto'}}>
                     We empower our patients with personalized healthcare that is efficient and effective. We help them achieve their health goals and live their best lives. </Typography>
                 </Box>
             </Grid>
@@ -28,7 +28,7 @@ const MVV = () => {
                     <RemoveRedEyeRoundedIcon sx={{color:theme.primary_color, fontSize:'10rem'}} />
                     <Typography sx={{fontSize:'2rem', fontWeight:'700'}}>Our Vision</Typography>
                     <Box sx={{width:'50%', height:'2px', backgroundColor:theme.sec_color}}></Box>
-                    <Typography sx={{textAlign:'justify', color:theme.primary_color, marginTop:'2.5rem', fontSize:theme.body_font}}>To be the world’s largest enterprise for mass customization of healthcare. </Typography>
+                    <Typography sx={{textAlign:'justify', color:theme.primary_color, marginTop:'2.5rem', fontSize:theme.body_font, hyphens: 'auto'}}>To be the world’s largest enterprise for mass customization of healthcare. </Typography>
                 </Box>
             </Grid>           
         </Grid>

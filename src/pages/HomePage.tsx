@@ -5,10 +5,21 @@ import Footer from '../components/shared/footer/Footer';
 import Services from '../components/home/ourServices/Services';
 import AboutUsSum from '../components/home/aboutUsSum/AboutUsSum';
 import DoctorsAndFeatures from '../components/home/doctorsAndFeatures/DoctorsAndFeatures';
+import { useRef, useEffect } from 'react';
 
 const HomePage = () => {
+  const scrollToTop = useRef<HTMLDivElement>(null);
+  
+  useEffect(() => {
+    const scrollElement = scrollToTop.current;
+    if (scrollElement) {
+      scrollElement.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  }, []);
+  
   return (
-    <div >
+    <div ref={scrollToTop}>
         <NavBar />
         <Welcome />
         <DoctorsAndFeatures />

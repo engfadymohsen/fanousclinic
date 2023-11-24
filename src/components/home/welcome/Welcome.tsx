@@ -4,6 +4,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import AndroidIcon from '@mui/icons-material/Android';
+import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import AppleIcon from '@mui/icons-material/Apple';
 import theme from '../../../theme/theme';
 import { Link } from '@mui/material';
@@ -28,7 +29,7 @@ const Welcome = () => {
             <Box sx={{
               backgroundColor:theme.primary_color,
               color:'white',
-              padding:'10px 20px',
+              padding:'15px 20px',
               marginRight  :'20px',
               height:'20px',
               borderRadius:'20px',
@@ -45,6 +46,7 @@ const Welcome = () => {
             <Box sx={{display:'flex'}}>
             <Link href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
             <Link href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
+            <Link href="https://www.google.com/maps/place/10926+S+Tryon+St,+Charlotte,+NC+28273/data=!4m2!3m1!1s0x88569a474bb9509b:0x9a21640c57d737f1?sa=X&ved=2ahUKEwi2udzV_tWCAxULm7AFHQXPD2YQ8gF6BAgPEAA" target="_blank" rel="noopener"><PlaceOutlinedIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
             <Link href="mailto:marketing@fanousclinic.com" target="_blank" rel="noopener"><MailOutlineIcon sx={{marginRight:'10px', color:theme.primary_color}}/></Link>
             </Box>
           </Box>

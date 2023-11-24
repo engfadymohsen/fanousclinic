@@ -16,7 +16,7 @@ const OurData = () => {
             <PlaceOutlinedIcon sx={icnStyle}/>
         </DataCard>
      </Box>
-      <DataCard title='Phone Number' desc='704 219 5384'>
+      <DataCard title='Phone Number' desc='(704) 219-5384'>
           <LocalPhoneOutlinedIcon sx={icnStyle}/>
       </DataCard>
       <DataCard title='Email' desc='info@fanousclinic.com'  mb='0'>

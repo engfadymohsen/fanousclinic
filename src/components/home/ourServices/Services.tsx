@@ -24,8 +24,8 @@ const Services = () => {
   ]
 
   return (
-    <Box sx={{backgroundColor:theme.primary_color, width:'100%', padding:'0px 0 20px'}}>
-      <Box sx={{backgroundColor:'#41bbcb4f', width:'90%',borderBottomRightRadius:'15px', borderBottomLeftRadius:'15px', margin:'0 auto 20px'}}>
+    <Box sx={{backgroundColor:theme.primary_color, width:'100%', padding:'30px 0'}}>
+      <Box sx={{backgroundColor:'#41bbcb4f', width:'90%',borderRadius:'15px', margin:'0 auto 20px'}}>
         <Typography sx={{textAlign:'center', fontSize:'4rem', fontWeight:'600', color:'white'}}>OUR SERVICES</Typography>
       </Box>
       <Box sx={{width:'90%', margin:'0 auto'}}>
@@ -36,7 +36,7 @@ const Services = () => {
                       <Box component='img' src={service.imgSrc} alt='' sx={{width:'100%', borderTopRightRadius:'15px', borderTopLeftRadius:'15px'}}></Box>
                       <Box sx={{padding:'20px', color:'white'}}>
                         <Typography sx={{fontSize:'2rem', fontWeight:'700'}}>{service.title}</Typography>
-                        <Typography sx={{textAlign:'justify', marginTop:'1rem', fontSize:theme.body_font}}>{service.content}</Typography>
+                        <Typography sx={{textAlign:'justify', marginTop:'1rem', fontSize:theme.body_font, hyphens: 'auto'}}>{service.content}</Typography>
                       </Box>
                   </Box>
               </Grid>
