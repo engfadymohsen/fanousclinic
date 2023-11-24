@@ -11,10 +11,10 @@ const OurData = () => {
   return (
     <>
       <Box>
+        <Map />
         <DataCard title='Our Location' desc='10926 South Tryon Street, Suite D, Charlotte, NC 28273'>
             <PlaceOutlinedIcon sx={icnStyle}/>
         </DataCard>
-        <Map />
      </Box>
       <DataCard title='Phone Number' desc='704 219 5384'>
           <LocalPhoneOutlinedIcon sx={icnStyle}/>

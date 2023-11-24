@@ -14,7 +14,7 @@
 const theme = {
     primary_color: '#033449',
     sec_color: '#41bbcb',
-    body_font: '1.2rem'
+    body_font: '1.5rem'
 }
 
 export default theme
