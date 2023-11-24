@@ -7,7 +7,7 @@ const DataCard = (props: any) => {
         {props.children}
         <Box sx={{marginLeft:'0.7rem'}}>
             <Typography sx={{fontSize:'1rem', fontWeight:'400', color:theme.primary_color}}>{props.title}</Typography>
-            <Typography sx={{fontSize:theme.body_font, fontWeight:'600', color:theme.primary_color, width:{md:'80%', sx:'100%'}}}>{props.desc}</Typography>
+            <Typography sx={{fontSize:theme.body_font, fontWeight:'600', color:theme.primary_color, width:'100%'}}>{props.desc}</Typography>
         </Box>
     </Box>
   )

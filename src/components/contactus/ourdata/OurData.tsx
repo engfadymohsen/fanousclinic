@@ -11,12 +11,12 @@ const OurData = () => {
   return (
     <>
       <Box>
-        <DataCard title='Our Location' desc='9200i Woodhall Lake Drive Waxhaw, NC 28173'>
+        <DataCard title='Our Location' desc='10926 South Tryon Street, Suite D, Charlotte, NC 28273'>
             <PlaceOutlinedIcon sx={icnStyle}/>
         </DataCard>
         <Map />
      </Box>
-      <DataCard title='Phone Number' desc=' 2166595992'>
+      <DataCard title='Phone Number' desc='704 219 5384'>
           <LocalPhoneOutlinedIcon sx={icnStyle}/>
       </DataCard>
       <DataCard title='Email' desc='info@fanousclinic.com'  mb='0'>

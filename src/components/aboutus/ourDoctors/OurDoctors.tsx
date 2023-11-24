@@ -26,7 +26,6 @@ const OurDoctors = () => {
   ]
 
   return (
-    
     <Box sx={{width:'90%', margin:'20px auto'}} >
       <Typography sx={{fontSize:'4rem',color:theme.primary_color, marginBottom:'20px',lineHeight:{xs:'1', md:'auto'}}} ><span style={{fontWeight:'600'}}>Meet </span>Our Doctors</Typography>
       <Grid container spacing={3}>
