@@ -33,7 +33,7 @@ const Footer = () => {
             </Box>
           </Grid>
           <Grid item xs={12} md={6} sx={{display:'flex', alignItems:'center', justifyContent:'center'}}>
-            <Box sx={{display:'flex', flexDirection:'column', alignItems:'center'}}>
+            <Box sx={{display:'flex', flexDirection:'column', alignItems:{md:'flex-start', xs:'center'}}}>
               <Box sx={{display:'flex', justifyContent:'space-between', width:'37%', marginBottom:'1rem'}}>
                 <Link href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{color:'white'}}/></Link>
                 <Link href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{color:'white'}}/></Link>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </Link>
                 <Link href="https://www.youtube.com/@fanousclinic" target="_blank" rel="noopener"><YouTubeIcon sx={{color:'White'}}/></Link>      
               </Box>
-              <Box sx={{color:'white', display:'flex', flexDirection:'column', justifyContent:{md:'flex-start',xs:'center'}, textAlign:'center'}}>
+              <Box sx={{color:'white', display:'flex', flexDirection:'column', alignItems:{md:'flex-start',xs:'center'}, textAlign:{md:'left', xs:'center'}}}>
                 <Typography sx={{ fontWeight:'600', marginBottom:'0.3rem',fontSize:theme.body_font}}>Fanous Clinic</Typography>
                 <Typography sx={{ fontWeight:'200', marginBottom:'0.3rem',fontSize:theme.body_font, width:'100%'}}>10926 South Tryon Street, Suite D, Charlotte, NC 28273</Typography>
                 <Typography sx={{ fontWeight:'200',fontSize:theme.body_font}}>704 219 5384</Typography>
