@@ -2,6 +2,7 @@ import { Box, Typography } from '@mui/material'
 import theme from '../../../theme/theme'
 
 const OurHistory = () => {
+
   return (
     <Box sx={{backgroundColor:theme.primary_color, overflow:'hidden', position:'relative'}}>
         <Box component='img' src='./assets/logoheart.png' alt='' sx={{display:{md:'block', xs:'none'},position:'absolute', right:'-20%', top:'-10%', width:{md:'50%', xs:'70%'}}}></Box>
