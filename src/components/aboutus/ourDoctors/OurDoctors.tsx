@@ -1,5 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
-import HorizontalCard from "../../shared/HorizontalCard";
+import { Box, Typography } from "@mui/material";
 import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
 import DoctorCard from "./DoctorCard";

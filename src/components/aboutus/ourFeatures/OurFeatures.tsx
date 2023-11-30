@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import HorizontalCard from "../../shared/HorizontalCard";
 import theme from "../../../theme/theme";
-import { useState, useEffect } from "react";
 import Swipper from "../../shared/Swipper";
 
 const OurFeatures = () => {
