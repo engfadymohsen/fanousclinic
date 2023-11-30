@@ -50,7 +50,7 @@ const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) =>
     }, timeOut);
 
     return () => clearInterval(interval);
-  }, [Scroll, i, timeOut, x.length]);
+  }, [Scroll, i, timeOut, x.length, NumOfElements]);
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
       <Box
