@@ -7,19 +7,19 @@ const OurFeatures = () => {
   const featurs = [
     {
       id: "1",
-      src: "./assets/features/fearure1_ComprehensiveCare.png",
+      src: "./assets/features/fearure1.png",
       title: "Comprehensive Medical Care",
       body: "fanous Clinic offers a one-stop-shop for all your medical needs. You can consult with your primary care provider, a specialist, and a pharmacist all in one place. This eliminates the need for multiple visits to different locations, saving your time and effort.",
     },
     {
       id: "2",
-      src: "./assets/features/feature2_Streamlined_Communication.png",
+      src: "./assets/features/feature2.png",
       title: "Streamlined Communication",
       body: "fanous  Clinic ensures that there is no lack of communication between your primary care provider, specialist, and pharmacist. You can be assured that everyone involved in your care shares a common understanding of your needs.",
     },
     {
       id: "3",
-      src: "./assets/features/feature3_Transperancy.png",
+      src: "./assets/features/feature3.png",
       title: "Transperancy",
       body: "fanous Clinic is committed to transparency in all aspects of its operations. Patients can be confident that they are receiving the best possible care, and that all information is being shared openly and honestly.​",
     }

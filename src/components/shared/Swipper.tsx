@@ -14,13 +14,13 @@ export const controller = (children: any, setScroll: Function, setI: Function, i
   for (let l = 0; l < children.length - (NumOfElements - 1); l++) {
     content.push(
       <Box
-        id="swipper-id-1"
         sx={{
           borderRadius: "50%",
-          backgroundColor: i === l ? theme.primary_color : "#ddd",
+          backgroundColor: i === l ? '#000000dd' : "#00000050",
           width: "1rem",
           height: "1rem",
           cursor: "pointer",
+          margin:'0 .5rem '
         }}
         onClick={() => {
           setScroll(l * (-90 / NumOfElements));
@@ -72,9 +72,8 @@ const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) =>
         sx={{
           display: "flex",
           height: "2rem",
-          width: "7rem",
           margin: "0 auto",
-          justifyContent: "space-between",
+          justifyContent: "center",
           marginTop: "2rem",
         }}
       >

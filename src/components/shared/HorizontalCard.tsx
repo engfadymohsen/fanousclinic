@@ -21,6 +21,8 @@ const HorizontalCard = (props: any) => {
           display: "flex",
           flexDirection: "column",
           justifyContent: "center",
+          padding:'1rem 2rem'
+
         }}
       >
         <Box
@@ -28,6 +30,7 @@ const HorizontalCard = (props: any) => {
             display: "flex",
             flexDirection: "column",
             marginBottom: "20px",
+
           }}
         >
           <Typography
@@ -35,6 +38,7 @@ const HorizontalCard = (props: any) => {
               fontSize: "2rem",
               fontWeight: "800",
               color: theme.primary_color,
+              
             }}
           >
             {props.docName}
@@ -45,6 +49,7 @@ const HorizontalCard = (props: any) => {
                 fontSize: "1rem",
                 fontWeight: "600",
                 color: theme.sec_color,
+                
               }}
             >
               {props.docPos}
@@ -56,6 +61,8 @@ const HorizontalCard = (props: any) => {
             fontSize: theme.body_font,
             fontWeight: "400",
             color: theme.primary_color,
+            textAlign:'justify',
+            hyphens:'auto',
           }}
         >
           {props.docDisc}
