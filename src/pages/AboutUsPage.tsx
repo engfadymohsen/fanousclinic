@@ -22,9 +22,9 @@ const AboutUsPage = () => {
     <div ref={scrollToTop}>
     <NavBar />
     <Welcome />
-    <OurFeatures />
     <OurHistory />
-    <OurDoctors />
+    <OurFeatures />
+    {/* <OurDoctors /> */}
     <Footer />
     </div>
   )

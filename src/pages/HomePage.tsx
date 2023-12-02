@@ -22,7 +22,7 @@ const HomePage = () => {
     <div ref={scrollToTop}>
         <NavBar />
         <Welcome />
-        <DoctorsAndFeatures />
+        {/* <DoctorsAndFeatures /> */}
         <MVV />
         <Services />
         <AboutUsSum />

@@ -23,7 +23,7 @@ const Footer = () => {
         flexDirection:'column',
         alignItems:'center',
         justifyContent:'center',
-        padding:{lg:'3rem 1rem 3rem 5rem', xs:'2rem 2rem'},
+        padding:{lg:'3rem 5rem 3rem 5rem', xs:'2rem 2rem'},
         boxSizing:'border-box',
         backgroundColor:theme.primary_color,
     }}>
@@ -49,7 +49,7 @@ const Footer = () => {
                 <Link to='/aboutus' style={{textDecoration:'none', color:'white'}}><Typography sx={{marginBottom:'1rem',fontSize:theme.body_font}}>About fanous Clinic</Typography></Link>
                 <Link to='/contactus' style={{textDecoration:'none', color:'white'}}><Typography sx={{marginBottom:'1rem',fontSize:theme.body_font}}>Contact Us</Typography></Link>
                 <Link to='/' style={{textDecoration:'none', color:'white'}}><Typography sx={{marginBottom:'1rem',fontSize:theme.body_font}}>Help Center</Typography></Link>
-                <Link to='/' style={{textDecoration:'none', color:'white'}}><Typography sx={{marginBottom:'1rem',fontSize:theme.body_font}}>Our Policies</Typography></Link>
+                {/* <Link to='/' style={{textDecoration:'none', color:'white'}}><Typography sx={{marginBottom:'1rem',fontSize:theme.body_font}}>Our Policies</Typography></Link> */}
               </Box>
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={4}>

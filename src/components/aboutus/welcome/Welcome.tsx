@@ -5,7 +5,7 @@ const Welcome = () => {
   return (
     <>
       <Box sx={{
-        // backgroundImage:'url(./assets/benefits.jpg)',
+        backgroundImage:'url(./assets/benefits.jpg)',
         backgroundSize:'cover', 
         width:'100%', 
         minHeight:'38rem', 
@@ -18,7 +18,7 @@ const Welcome = () => {
         </Box>
         <Box sx={{width:'100%'}}>
           <Typography sx={{fontSize:theme.body_font, fontWeight:'400', textAlign:'justify', textAlignLast:'center',hyphens: 'auto'}}>
-          At <span style={{color:theme.sec_color, fontWeight:'600'}}>fanous Clinic,</span> we are more than just a healthcare provider. We are a community of dedicated professionals committed to enhancing the quality of life for our patients based in Charlotte, North Carolina. Our mission is to provide personalized, high-quality healthcare services that are easily accessible and effective. 
+          At <span style={{color:theme.primary_color, fontWeight:'700'}}>fanous Clinic,</span> we are more than just a healthcare provider. We are a community of dedicated professionals committed to enhancing the quality of life for our patients based in Charlotte, North Carolina. Our mission is to provide personalized, high-quality healthcare services that are easily accessible and effective. 
 
 We understand that every patient is unique, and their healthcare needs are just as diverse. That’s why we prioritize understanding your needs and concerns. 
 
@@ -28,7 +28,7 @@ Recognizing the value of your time, we have provisions for appointments and onli
 
 But what truly makes us different is our unwavering commitment to our patients. At FANOUS Clinic, we believe in empowering individuals to lead healthy and fulfilling lives. We are here to support you in achieving your health goals and enhancing your quality of life. This is not just our job, but our passion. 
           </Typography>
-          <Typography sx={{color:theme.sec_color,fontSize:theme.body_font, fontWeight:'500', marginTop:'1rem'}}>We are fanous Clinic - your partner in health, your community in care. </Typography>
+          <Typography sx={{color:theme.primary_color,fontSize:theme.body_font, fontWeight:'700', marginTop:'1rem'}}>We are fanous Clinic - your partner in health, your community in care. </Typography>
         </Box>
       </Box>
     </>
