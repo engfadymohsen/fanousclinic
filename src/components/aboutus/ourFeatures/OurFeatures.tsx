@@ -13,7 +13,7 @@ const OurFeatures = () => {
     },
     {
       id: "2",
-      src: "./assets/features/service2_StreamlinedCommunication.png",
+      src: "./assets/features/feature2_Streamlined_Communication.png",
       title: "Streamlined Communication",
       body: "fanous  Clinic ensures that there is no lack of communication between your primary care provider, specialist, and pharmacist. You can be assured that everyone involved in your care shares a common understanding of your needs.",
     },
