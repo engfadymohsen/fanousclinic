@@ -7,17 +7,17 @@ const Services = () => {
 
   const services = [
     {
-      imgSrc: './assets/welcome.jpg',
+      imgSrc: './assets/services/service1_UrgentVisit .png',
       title: 'Urgent Care Services',
       content: 'We offer extended hours of services for our patients to manage their urgent medical needs. We believe that we have to be there for our special patients population when they need urgent services.'
     },
     {
-      imgSrc: './assets/welcome.jpg',
+      imgSrc: './assets/services/service2_Chronic.png',
       title: 'Chronic Conditions Services',
       content: 'We developed a state of art practice to serve our patients with chronic conditions. As 6 out 10 adults in US live with one or more chronic conditions, we focus on those patients who need special medical expertise. We developed a harmonious system for effective management of most common conditions including Hypertension, Diabetes, Hyperlipidemia, Obesity and other common conditions.'
     },
     {
-      imgSrc: './assets/welcome.jpg',
+      imgSrc: './assets/services/service3_PreventiveCare .png',
       title: 'Preventive Care services',
       content: 'Whether you have chronic conditions or you do not, we strongly focus on preventive services. We believe that preventive care is the gateway to prevent chronic diseases, even we can reverse chronic diseases with preventive services. We help our patients to live healthy lifestyle.'
     },
