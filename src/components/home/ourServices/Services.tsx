@@ -12,7 +12,7 @@ const Services = () => {
       content: 'We offer extended hours of services for our patients to manage their urgent medical needs. We believe that we have to be there for our special patients population when they need urgent services.'
     },
     {
-      imgSrc: './assets/services/service2_Chronic.png',
+      imgSrc: './assets/services/service2_ChronicConditions.png',
       title: 'Chronic Conditions Services',
       content: 'We developed a state of art practice to serve our patients with chronic conditions. As 6 out 10 adults in US live with one or more chronic conditions, we focus on those patients who need special medical expertise. We developed a harmonious system for effective management of most common conditions including Hypertension, Diabetes, Hyperlipidemia, Obesity and other common conditions.'
     },
