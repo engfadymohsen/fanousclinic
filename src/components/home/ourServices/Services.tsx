@@ -1,8 +1,14 @@
+<<<<<<< Updated upstream
 import Box from "@mui/material/Box";
 import Grid from "@mui/material/Grid";
 import Typography from "@mui/material/Typography";
 import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
+=======
+import Box from '@mui/material/Box'
+import Typography from '@mui/material/Typography'
+import theme from '../../../theme/theme'
+>>>>>>> Stashed changes
 
 const Services = () => {
   const services = [
