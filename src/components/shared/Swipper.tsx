@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import React, { ReactElement, useEffect, useState } from "react";
+import theme from "../../theme/theme";
 
 interface SwipperType {
   children: React.ReactNode;
