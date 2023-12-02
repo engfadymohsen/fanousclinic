@@ -7,7 +7,7 @@ const OurFeatures = () => {
   const featurs = [
     {
       id: "1",
-      src: "./assets/features/Preventive Care.png",
+      src: "./assets/features/Comprehensive Care.png",
       title: "Comprehensive Medical Care",
       body: "fanous Clinic offers a one-stop-shop for all your medical needs. You can consult with your primary care provider, a specialist, and a pharmacist all in one place. This eliminates the need for multiple visits to different locations, saving your time and effort.",
     },
