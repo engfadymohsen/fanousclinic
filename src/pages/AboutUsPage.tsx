@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import OurDoctors from '../components/aboutus/ourDoctors/OurDoctors';
+// import OurDoctors from '../components/aboutus/ourDoctors/OurDoctors';
 import OurFeatures from '../components/aboutus/ourFeatures/OurFeatures';
 import OurHistory from '../components/aboutus/ourhistory/OurHistory';
 import NavBar from '../components/shared/NavBar/NavBar';

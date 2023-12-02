@@ -4,7 +4,7 @@ import MVV from '../components/home/mvv/MVV';
 import Footer from '../components/shared/footer/Footer';
 import Services from '../components/home/ourServices/Services';
 import AboutUsSum from '../components/home/aboutUsSum/AboutUsSum';
-import DoctorsAndFeatures from '../components/home/doctorsAndFeatures/DoctorsAndFeatures';
+// import DoctorsAndFeatures from '../components/home/doctorsAndFeatures/DoctorsAndFeatures';
 import { useRef, useEffect } from 'react';
 
 const HomePage = () => {
