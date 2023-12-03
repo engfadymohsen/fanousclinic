@@ -27,7 +27,7 @@ const OurFeatures = () => {
     {
       id: "3",
       src: "./assets/features/feature3.png",
-      title: "Transperancy",
+      title: "Transparency",
       body: "fanous Clinic is committed to transparency in all aspects of its operations. Patients can be confident that they are receiving the best possible care.",
     }
   ];

@@ -16,7 +16,7 @@ const Services = () => {
       imgSrc: "./assets/services/service1.png",
       title: "Urgent Care Services",
       content:
-        "We offer extended hours of services for our patients to manage their urgent medical needs. We believe that we have to be there for our special patients population when they need urgent services.",
+        "We believe that we have to be there for our patients population when they need urgent services outside off regular working hours.",
     },
     {
       imgSrc: "./assets/services/service2.png",
