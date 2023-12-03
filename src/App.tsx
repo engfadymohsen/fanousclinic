@@ -4,8 +4,11 @@ import {BrowserRouter as Router, Route , Routes} from 'react-router-dom';
 import AboutUsPage from './pages/AboutUsPage';
 import ContactUsPage from './pages/ContactUsPage';
 import PoliciesPage from './pages/PoliciesPage';
-const App = () => {
 
+
+
+
+const App = () => {
   return (
     <Router>
       <Routes>
@@ -17,5 +20,9 @@ const App = () => {
     </Router>
   )
 }
+
+
+
+
 
 export default App
