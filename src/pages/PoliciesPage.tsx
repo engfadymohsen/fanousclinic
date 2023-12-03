@@ -1,9 +1,15 @@
 import { useRef, useEffect } from 'react';
 import NavBar from '../components/shared/NavBar/NavBar'
 
+
+
+
+
 const PoliciesPage = () => {
   const scrollToTop = useRef<HTMLDivElement>(null);
   
+
+
   useEffect(() => {
     const scrollElement = scrollToTop.current;
     if (scrollElement) {
@@ -12,6 +18,12 @@ const PoliciesPage = () => {
     }
   }, []);
 
+
+
+
+
+
+
   return (
     <div ref={scrollToTop}>
         <NavBar />
@@ -19,5 +31,10 @@ const PoliciesPage = () => {
     </div>
   )
 }
+
+
+
+
+
 
 export default PoliciesPage

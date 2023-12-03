@@ -15,6 +15,17 @@ import FmdGoodIcon from '@mui/icons-material/FmdGood';
 import EmailRoundedIcon from '@mui/icons-material/EmailRounded';
 
 import theme from '../../../theme/theme';
+
+
+
+
+
+
+
+
+
+
+
 const Footer = () => {
   return (
     <Box sx={{
@@ -86,5 +97,10 @@ const Footer = () => {
     </Box>
   )
 }
+
+
+
+
+
 
 export default Footer

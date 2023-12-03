@@ -2,6 +2,14 @@ import PrimaryBtn from '../../shared/PrimaryBtn';
 import theme from '../../../theme/theme';
 import TextField from '../../shared/TextField';
 
+
+
+
+
+
+
+
+
 const Form = () => {
   return (
     <form style={{display:'flex', flexDirection:'column', width:'100%', alignItems:'center'}}>
@@ -26,5 +34,10 @@ const Form = () => {
     </form>
   )
 }
+
+
+
+
+
 
 export default Form

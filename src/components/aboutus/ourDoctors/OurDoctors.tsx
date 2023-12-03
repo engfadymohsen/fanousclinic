@@ -3,6 +3,10 @@ import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
 import DoctorCard from "./DoctorCard";
 
+
+
+
+
 const OurDoctors = () => {
   const doctors = [
     {
@@ -42,6 +46,11 @@ const OurDoctors = () => {
     },
   ];
 
+
+
+
+
+  
   return (
     <Box sx={{ width: "90%", margin: "20px auto" }}>
       <Typography
@@ -67,5 +76,10 @@ const OurDoctors = () => {
     </Box>
   );
 };
+
+
+
+
+
 
 export default OurDoctors;

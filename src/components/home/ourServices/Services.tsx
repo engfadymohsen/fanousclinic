@@ -3,6 +3,13 @@ import Typography from "@mui/material/Typography";
 import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
 
+
+
+
+
+
+
+
 const Services = () => {
   const services = [
     {
@@ -24,6 +31,9 @@ const Services = () => {
         "Whether you have chronic conditions or you do not, we strongly focus on preventive services. We believe that preventive care is the gateway to prevent chronic diseases, even we can reverse chronic diseases with preventive services. We help our patients to live healthy lifestyle.",
     },
   ];
+
+
+
 
   return (
     <Box
@@ -101,5 +111,11 @@ const Services = () => {
     </Box>
   );
 };
+
+
+
+
+
+
 
 export default Services;

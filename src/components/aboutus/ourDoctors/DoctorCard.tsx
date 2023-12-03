@@ -1,6 +1,12 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import theme from "../../../theme/theme";
+
+
+
+
+
+
+
 
 interface doctotsData {
   className: string;
@@ -8,6 +14,12 @@ interface doctotsData {
   docPos: string;
   imgSrc: string;
 }
+
+
+
+
+
+
 
 const DoctorCard = ({ className, docName, docPos, imgSrc }: doctotsData) => {
   return (
@@ -41,5 +53,10 @@ const DoctorCard = ({ className, docName, docPos, imgSrc }: doctotsData) => {
     </Box>
   );
 };
+
+
+
+
+
 
 export default DoctorCard;

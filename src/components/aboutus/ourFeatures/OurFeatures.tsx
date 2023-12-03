@@ -3,6 +3,13 @@ import HorizontalCard from "../../shared/HorizontalCard";
 import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
 
+
+
+
+
+
+
+
 const OurFeatures = () => {
   const featurs = [
     {
@@ -24,6 +31,13 @@ const OurFeatures = () => {
       body: "fanous Clinic is committed to transparency in all aspects of its operations. Patients can be confident that they are receiving the best possible care.",
     }
   ];
+
+
+
+
+
+
+
 
   return (
     <Box sx={{ width: "90%", margin: "20px auto" }}>
@@ -52,5 +66,11 @@ const OurFeatures = () => {
     </Box>
   );
 };
+
+
+
+
+
+
 
 export default OurFeatures;

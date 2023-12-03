@@ -12,6 +12,16 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import theme from "../../../theme/theme";
 
+
+
+
+
+
+
+
+
+
+
 const pages = ["HOME", "ABOUT US", "CONTACT US"];
 
 function NavBar() {
@@ -159,4 +169,11 @@ function NavBar() {
     </AppBar>
   );
 }
+
+
+
+
+
+
+
 export default NavBar;

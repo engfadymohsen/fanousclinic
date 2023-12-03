@@ -8,6 +8,13 @@ import PlaceOutlinedIcon from '@mui/icons-material/PlaceOutlined';
 import AppleIcon from '@mui/icons-material/Apple';
 import theme from '../../../theme/theme';
 import { Link } from '@mui/material';
+
+
+
+
+
+
+
 const Welcome = () => {
   return (
     <Box sx={{
@@ -55,5 +62,8 @@ const Welcome = () => {
     </Box>
   )
 }
+
+
+
 
 export default Welcome

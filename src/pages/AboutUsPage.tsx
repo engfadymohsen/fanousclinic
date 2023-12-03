@@ -7,6 +7,13 @@ import Footer from '../components/shared/footer/Footer';
 import Welcome from '../components/aboutus/welcome/Welcome';
 
 
+
+
+
+
+
+
+
 const AboutUsPage = () => {
   const scrollToTop = useRef<HTMLDivElement>(null);
   
@@ -17,6 +24,10 @@ const AboutUsPage = () => {
       document.documentElement.scrollTop = 0;
     }
   }, []);
+
+
+
+
 
   return (
     <div ref={scrollToTop}>
@@ -29,5 +40,11 @@ const AboutUsPage = () => {
     </div>
   )
 }
+
+
+
+
+
+
 
 export default AboutUsPage

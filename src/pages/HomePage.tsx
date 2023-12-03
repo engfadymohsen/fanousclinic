@@ -7,6 +7,15 @@ import AboutUsSum from '../components/home/aboutUsSum/AboutUsSum';
 // import DoctorsAndFeatures from '../components/home/doctorsAndFeatures/DoctorsAndFeatures';
 import { useRef, useEffect } from 'react';
 
+
+
+
+
+
+
+
+
+
 const HomePage = () => {
   const scrollToTop = useRef<HTMLDivElement>(null);
   
@@ -30,5 +39,13 @@ const HomePage = () => {
     </div>
   )
 }
+
+
+
+
+
+
+
+
 
 export default HomePage

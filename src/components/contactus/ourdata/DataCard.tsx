@@ -1,6 +1,11 @@
 import { Box, Typography } from "@mui/material"
 import theme from "../../../theme/theme"
 
+
+
+
+
+
 const DataCard = (props: any) => {
   return (
     <Box sx={{display:'flex', marginBottom:props.mb ? props.mb : '1rem'}}>
@@ -12,5 +17,10 @@ const DataCard = (props: any) => {
     </Box>
   )
 }
+
+
+
+
+
 
 export default DataCard

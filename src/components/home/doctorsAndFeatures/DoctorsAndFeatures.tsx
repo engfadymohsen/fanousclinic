@@ -1,6 +1,14 @@
 import { Box, Grid } from '@mui/material'
 import SumCard from '../../shared/SumCard'
 
+
+
+
+
+
+
+
+
 const DoctorsAndFeatures = () => {
   return (
     <Box sx={{backgroundColor:'white',width:'95%', margin:'1rem auto 0'}}>
@@ -24,5 +32,10 @@ const DoctorsAndFeatures = () => {
     </Box>
   )
 }
+
+
+
+
+
 
 export default DoctorsAndFeatures

@@ -6,6 +6,13 @@ import Map from "../map/Map";
 import theme from "../../../theme/theme";
 import { Box, Link } from "@mui/material";
 
+
+
+
+
+
+
+
 const OurData = () => {
   const icnStyle = { fontSize: "2.2rem", color: theme.primary_color };
   return (
@@ -49,5 +56,10 @@ const OurData = () => {
     </>
   );
 };
+
+
+
+
+
 
 export default OurData;

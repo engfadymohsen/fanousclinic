@@ -6,6 +6,13 @@ import OurData from '../components/contactus/ourdata/OurData'
 import theme from '../theme/theme'
 import { useRef, useEffect } from 'react'
 
+
+
+
+
+
+
+
 const ContactUsPage = () => {
   const scrollToTop = useRef<HTMLDivElement>(null);
   
@@ -16,6 +23,11 @@ const ContactUsPage = () => {
       document.documentElement.scrollTop = 0;
     }
   }, []);
+
+
+
+
+
 
   return (
     <Box ref={scrollToTop}>
@@ -46,5 +58,13 @@ const ContactUsPage = () => {
     </Box>
   )
 }
+
+
+
+
+
+
+
+
 
 export default ContactUsPage

@@ -1,12 +1,26 @@
 import { Box } from "@mui/material";
 import React, { ReactElement, useEffect, useState } from "react";
 
+
+
+
+
+
+
+
+
 interface SwipperType {
   children: React.ReactNode;
   className: string;
   timeOut: number;
   NumOfElements: number
 }
+
+
+
+
+
+
 
 export const controller = (children: any, setScroll: Function, setI: Function, i: number, NumOfElements: number) => {
   let content: ReactElement[] = [];
@@ -31,10 +45,18 @@ export const controller = (children: any, setScroll: Function, setI: Function, i
   return content;
 };
 
+
+
+
+
+
+
+
 const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) => {
   const [Scroll, setScroll] = useState(0);
   const [i, setI] = useState(0);
   const x = document.getElementsByClassName(className);
+
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -50,6 +72,11 @@ const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) =>
 
     return () => clearInterval(interval);
   }, [Scroll, i, timeOut, x.length, NumOfElements]);
+
+
+
+
+
   return (
     <Box sx={{ width: "100%", overflowX: "hidden" }}>
       <Box
@@ -81,5 +108,15 @@ const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) =>
     </Box>
   );
 };
+
+
+
+
+
+
+
+
+
+
 
 export default Swipper;

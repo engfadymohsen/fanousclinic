@@ -1,6 +1,14 @@
 import { Button, Box, Typography } from '@mui/material'
 import theme from '../../theme/theme'
 
+
+
+
+
+
+
+
+
 const PrimaryBtn = (props: any) => {
   return (
     <Button sx={{padding:'0px', width:'fit-content'}} type={props.type ? props.type : 'button'}>
@@ -22,5 +30,12 @@ const PrimaryBtn = (props: any) => {
     </Button>
   )
 }
+
+
+
+
+
+
+
 
 export default PrimaryBtn

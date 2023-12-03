@@ -2,6 +2,13 @@ import { Box, Typography } from "@mui/material"
 import theme from "../../theme/theme"
 import ArrowCircleRightOutlinedIcon from '@mui/icons-material/ArrowCircleRightOutlined';
 import { Link } from "react-router-dom";
+
+
+
+
+
+
+
 const SumCard = (props: any) => {
   return (
     <Box sx={{ backgroundColor:'white'}}>
@@ -26,5 +33,10 @@ const SumCard = (props: any) => {
     </Box>
   )
 }
+
+
+
+
+
 
 export default SumCard

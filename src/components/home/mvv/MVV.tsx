@@ -4,6 +4,15 @@ import Typography from '@mui/material/Typography';
 import RemoveRedEyeRoundedIcon from '@mui/icons-material/RemoveRedEyeRounded';
 import AdjustRoundedIcon from '@mui/icons-material/AdjustRounded';
 import theme from '../../../theme/theme';
+
+
+
+
+
+
+
+
+
 const MVV = () => {
   return (
     <Box sx={{
@@ -35,5 +44,13 @@ const MVV = () => {
     </Box>
   )
 }
+
+
+
+
+
+
+
+
 
 export default MVV

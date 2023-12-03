@@ -1,9 +1,16 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import theme from "../../theme/theme";
 
-const HorizontalCard = (props: any) => {
 
+
+
+
+
+
+
+
+
+const HorizontalCard = (props: any) => {
   return (
     <Box
       sx={{ display: "flex", alignItems: "center", width: props.width }}
@@ -71,5 +78,13 @@ const HorizontalCard = (props: any) => {
     </Box>
   );
 };
+
+
+
+
+
+
+
+
 
 export default HorizontalCard;
