@@ -60,19 +60,19 @@ const Footer = () => {
                 <Mlink href="https://www.google.com/maps/place/10926+S+Tryon+St,+Charlotte,+NC+28273/data=!4m2!3m1!1s0x88569a474bb9509b:0x9a21640c57d737f1?sa=X&ved=2ahUKEwi2udzV_tWCAxULm7AFHQXPD2YQ8gF6BAgPEAA" target="_blank" rel="noopener" sx={{textDecoration:'none' , color:'white'}}>
                 <Box sx={{display:'flex', alignItems:'center', marginBottom:'1rem'}}>
                   <FmdGoodIcon sx={{marginRight:'1rem', color:theme.sec_color, fontSize:'1.65rem'}}/>
-                  <Typography sx={{ fontWeight:'200', fontSize:theme.body_font}}>10926 South Tryon Street, Suite D, Charlotte, NC 28273</Typography>
+                  <Typography sx={{ fontWeight:'600', fontSize:theme.body_font}}>10926 South Tryon Street, Suite D, Charlotte, NC 28273</Typography>
                 </Box>
                 </Mlink>
                 <Mlink href="tel:(704) 219-5384" target="_blank" rel="noopener" sx={{textDecoration:'none' , color:'white'}}>
                 <Box sx={{display:'flex', alignItems:'center', marginBottom:'1rem'}}>
                   <PhoneIcon sx={{marginRight:'1rem', color:theme.sec_color, fontSize:'1.65rem'}}/>
-                  <Typography sx={{ fontWeight:'200', fontSize:theme.body_font}}>(704) 219-5384</Typography>
+                  <Typography sx={{ fontWeight:'600', fontSize:theme.body_font}}>(704) 219-5384</Typography>
                 </Box>
                 </Mlink>
                 <Mlink href="mailto:marketing@fanousclinic.com" target="_blank" rel="noopener" sx={{textDecoration:'none' , color:'white'}}>
                 <Box sx={{display:'flex', alignItems:'center', marginBottom:'1rem'}}>
                   <EmailRoundedIcon sx={{marginRight:'1rem', color:theme.sec_color, fontSize:'1.65rem'}}/>
-                  <Typography sx={{ fontWeight:'200', fontSize:theme.body_font}}>marketing@fanousclinic.com</Typography>
+                  <Typography sx={{ fontWeight:'600', fontSize:theme.body_font}}>marketing@fanousclinic.com</Typography>
                 </Box>
                 </Mlink>
               </Box>
