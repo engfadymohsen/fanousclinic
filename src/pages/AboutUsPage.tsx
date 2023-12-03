@@ -22,8 +22,8 @@ const AboutUsPage = () => {
     <div ref={scrollToTop}>
     <NavBar />
     <Welcome />
-    <OurFeatures />
     <OurHistory />
+    <OurFeatures />
     {/* <OurDoctors /> */}
     <Footer />
     </div>
