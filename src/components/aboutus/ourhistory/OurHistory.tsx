@@ -4,7 +4,7 @@ import theme from '../../../theme/theme'
 const OurHistory = () => {
 
   return (
-    <Box sx={{backgroundColor:theme.sec_color, overflow:'hidden', position:'relative'}}>
+    <Box sx={{backgroundColor:theme.primary_color, overflow:'hidden', position:'relative'}}>
         <Box component='img' src='./assets/logoheart.png' alt='' sx={{display:{md:'block', xs:'none'},position:'absolute', right:'-20%', top:'-10%', width:{md:'50%', xs:'70%'}}}></Box>
         <Box sx={{padding:{md:'4rem 6rem', xs:'1rem 1rem',},width:{md:'60%', xs:'90%'}, color:'white'}}>
             <Typography sx={{fontSize:'4rem', marginBottom:'20px',lineHeight:{xs:'1', md:'auto'}, color:'white'}} ><span style={{fontWeight:'600', color:theme.sec_color}}>Our </span>Story</Typography>
