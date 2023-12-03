@@ -27,7 +27,7 @@ const OurData = () => {
         >
           <DataCard
             title="Our Location"
-            desc="10926 South Tryon Street, Suite D,\nCharlotte, NC 28273"
+            desc={"10926 South Tryon Street, Suite D,<br />Charlotte, NC 28273"}
             
           >
             <PlaceOutlinedIcon sx={icnStyle} />
