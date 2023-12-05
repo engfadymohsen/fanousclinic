@@ -41,7 +41,7 @@ const Footer = () => {
         <Grid container >
           <Grid item xs={12} sm={12} md={12} lg={4} sx={{margin:{lg:'0',md:'1rem 0 3rem',sm:'1rem 0 3rem',xs:'1rem 0 3rem'}}}>
             <Box sx={{display:'flex',flexDirection:{lg:'column',md:'row', sm:'column', xs:'column'}, justifyContent:'space-around', alignItems:{lg:'flex-start', md:'center', sm:'center', xs:'center'}, height:'100%'}}>
-              <Box component='img' src='./assets/hlogo2.png' alt='' sx={{width:'13rem', margin:{lg:'0', md:'0',sm:'2rem', xs:'2rem'}}}></Box>
+              <Box component='img' src='./assets/hlogo2.png' alt='' sx={{width:'16rem', margin:{lg:'0', md:'0',sm:'2rem', xs:'2rem'}}}></Box>
               <Box sx={{display:'flex', justifyContent:'space-between', width:'12rem'}}>
                 <Mlink href="https://www.facebook.com/profile.php?id=61552333749894" target="_blank" rel="noopener"><FacebookRoundedIcon sx={{color:'white',fontSize:'1.65rem'}}/></Mlink>
                 <Mlink href="https://www.instagram.com/fanous.clinic" target="_blank" rel="noopener"><InstagramIcon sx={{color:'white',fontSize:'1.65rem'}}/></Mlink>

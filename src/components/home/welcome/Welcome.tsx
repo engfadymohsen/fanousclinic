@@ -26,11 +26,31 @@ const Welcome = () => {
         boxSizing:'border-box',
         }}>
         <Box sx={{display:'flex', flexDirection:{md:'row',xs:'column'}, color:theme.primary_color, fontSize:'5rem'}}>
-            <Typography sx={{fontWeight:'700', fontSize:'inherit'}}>FANOUS</Typography><Typography sx={{fontWeight:'100',fontSize:'inherit',marginTop:{md:'auto',xs:'-2rem'},color:'white'}}>CLINIC</Typography>
+            <Typography sx={{fontWeight:'700', fontSize:'inherit'}}>FANOUS</Typography><Typography sx={{fontWeight:'100',fontSize:'inherit',marginTop:{md:'auto',xs:'-2rem'}}}>CLINIC</Typography>
         </Box>
+
+
+
+        
         <Box >
           <Box sx={{color:theme.primary_color, fontSize:'2.5rem', marginTop:{md:'4%',xs:'10%'}, marginLeft:'2%'}}>
-            <Typography sx={{fontSize:'inherit', marginBottom:'-10px',width:'40%'}}>{'Personalized Healthcare at your fingertips'.toUpperCase()} </Typography>
+          <Typography 
+            sx={{
+                fontSize: 'inherit', 
+                marginBottom: '-10px',
+                width: '40%',
+                fontStyle: 'italic' // Add this line to make the text italic
+            }}
+            >
+            Personalized<br />
+            Healthcare at your<br />
+            Fingertips
+        </Typography>
+
+
+
+
+
           </Box>
           <Box sx={{display:'flex', alignItems: 'center', marginTop:{md:'7%',xs:'20%'}}}>
             <Box sx={{

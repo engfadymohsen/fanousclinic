@@ -92,13 +92,13 @@ const Services = () => {
                   }}
                 ></Box>
                 <Box
-                  sx={{ padding: "0px 20px 20px", color: "white"}}
+                  sx={{ padding: "0px 50px 20px", color: "white"}}
                 >
                   <Typography sx={{ fontSize: "2rem", fontWeight: "700", textAlign: "center"  }}>
                     {service.title}
                   </Typography>
                   <Typography
-                    sx={{ marginTop: "1rem", fontSize: theme.body_font, textAlign: "justify", hyphens:'auto', textAlignLast:'center' }}
+                    sx={{ marginTop: "1rem", fontSize: theme.body_font, textAlign: "center", hyphens:'auto', textAlignLast:'center' }}
                   >
                     {service.content}
                   </Typography>
