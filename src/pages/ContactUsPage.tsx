@@ -40,7 +40,7 @@ const ContactUsPage = () => {
         padding:{lg:'3rem 4rem', md:'3rem 3rem',sm:'3rem 1rem', xs:'3rem 1rem',},
         boxSizing:'border-box'
         }}>
-          <Typography sx={{fontSize:'4rem',lineHeight:{xs:'1', md:'auto'}, color:'white', textAlign:{md:"left", xs:'center'}}} ><span style={{fontWeight:'600', color:theme.primary_color}}>Contact </span><span style={{fontWeight:'200', color:theme.primary_color}}>US</span></Typography>
+          <Typography sx={{fontSize:'4rem',lineHeight:{xs:'1', md:'auto'}, color:'white', textAlign:{md:"left", xs:'center'}}} ><span style={{fontWeight:'600', color:theme.primary_color}}>CONTACT </span><span style={{fontWeight:'200', color:theme.primary_color}}>US</span></Typography>
           <Box sx={{marginTop:'2rem'}}>
             <Grid container spacing={3} sx={{alignItems:'stretch', height:'80%'}}>
               <Grid item xs={12} md={6} sx={{display:'flex',flexDirection:'column', justifyContent:'space-between'}} order={{ xs: 2, md: 1}}>
