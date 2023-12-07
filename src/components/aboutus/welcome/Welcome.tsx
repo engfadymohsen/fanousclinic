@@ -18,12 +18,12 @@ const Welcome = () => {
         backgroundSize:'cover', 
         width:'100%', 
         minHeight:'38rem', 
-        padding:{md:'4rem 6rem', xs:'1rem 1rem',},
+        padding:{md:'4rem 6rem', xs:'2rem 2rem',},
         boxSizing:'border-box',
         textAlign:'center',
       }}>
-        <Box sx={{display:'flex', flexDirection:{lg:'row', md:'column',sm:'column',xs:'column'}, color:theme.primary_color, fontSize:{md:'5rem',xs:'4rem', justifyContent:'center', alignItems:'center'}}}>
-            <Typography sx={{fontWeight:'700', fontSize:'inherit'}}>ABOUT</Typography><Typography sx={{fontWeight:'100',fontSize:'inherit',marginTop:{md:'auto',xs:'-2rem'}}}>&nbsp;Fanous Clinic</Typography>
+        <Box sx={{display:'flex', color:theme.primary_color, fontSize:{ lg: "4rem", md: "4rem", sm: "2rem", xs: "2rem" }, justifyContent:'center', alignItems:'center'}}>
+            <Typography sx={{fontWeight:'700', fontSize:'inherit'}}>ABOUT</Typography><Typography sx={{fontWeight:'100',fontSize:'inherit'}}>&nbsp;Fanous Clinic</Typography>
         </Box>
         <Box sx={{width:'100%'}}>
           <Typography sx={{fontSize:theme.body_font, fontWeight:'400', color:theme.primary_color, textAlign:'justify', textAlignLast:'center',hyphens: 'auto', marginTop: '2rem'}}>

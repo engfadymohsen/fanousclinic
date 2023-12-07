@@ -51,12 +51,12 @@ const OurFeatures = () => {
       >
         <span style={{ fontWeight: "600" }}>Our </span>Features
       </Typography>
-      <Swipper className="feature-card" timeOut={8000} NumOfElements={2}>
+      <Swipper className="feature-card" timeOut={8000} NumOfElements={1}>
         {featurs.map((feature) => (
           <HorizontalCard
             key={feature.id}
             className={"feature-card"}
-            width={{lg:'45vw', md:'45vw', sm:'90vw', xs:'90vw'}}
+            width={{lg:"45vw", md:"45vw", sm:"90vw", xs:"90vw"}}
             docName={feature.title}
             docDisc={feature.body}
             src={feature.src}

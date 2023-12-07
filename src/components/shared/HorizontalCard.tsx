@@ -13,7 +13,7 @@ import theme from "../../theme/theme";
 const HorizontalCard = (props: any) => {
   return (
     <Box
-      sx={{ display: "flex", alignItems: "center", width: props.width }}
+      sx={{ display: "flex", flexDirection:{lg:'row',md:'row',sm:'column',xs:'column',}, alignItems: "center", width: props.width }}
       className={props.className}
       key = {props.key}
     >
@@ -21,7 +21,7 @@ const HorizontalCard = (props: any) => {
         component="img"
         src={props.src}
         alt=""
-        sx={{ width: "40%", height: "fit-content" }}
+        sx={{ width: {lg:'40%',md:'40%',sm:'70%',xs:'70%',}, height: "fit-content" }}
       ></Box>
       <Box
         sx={{

@@ -3,13 +3,6 @@ import Typography from "@mui/material/Typography";
 import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
 
-
-
-
-
-
-
-
 const Services = () => {
   const services = [
     {
@@ -32,9 +25,6 @@ const Services = () => {
     },
   ];
 
-
-
-
   return (
     <Box
       sx={{
@@ -54,7 +44,7 @@ const Services = () => {
         <Typography
           sx={{
             textAlign: "center",
-            fontSize: {lg:"4rem", md:"4rem", sm:"2rem", xs:"2rem"},
+            fontSize: { lg: "4rem", md: "4rem", sm: "2rem", xs: "2rem" },
             fontWeight: "600",
             color: "white",
           }}
@@ -63,10 +53,14 @@ const Services = () => {
         </Typography>
       </Box>
       <Box sx={{ width: "90%", margin: "0 auto" }}>
-        <Swipper className="service-card" timeOut={5000} NumOfElements={1} >
+        <Swipper className="service-card" timeOut={5000} NumOfElements={1}>
           {services.map((service) => (
             <Box
-              sx={{ width: {lg:"45vw", md:"45vw", sm:"90vw", xs:"90vw"}, padding: "1rem ", boxSizing: "border-box" }}
+              sx={{
+                width: { lg: "45vw", md: "45vw", sm: "90vw", xs: "90vw" },
+                padding: "1rem ",
+                boxSizing: "border-box",
+              }}
             >
               <Box
                 className="service-card"
@@ -92,13 +86,32 @@ const Services = () => {
                   }}
                 ></Box>
                 <Box
-                  sx={{ padding: "0px 50px 20px", color: "white"}}
+                  sx={{
+                    padding: {
+                      lg: "0px 50px 20px",
+                      md: "0px 50px 20px",
+                      sm: "0px 1rem 20px",
+                      xs: "0px 1rem 20px",
+                    },
+                    color: "white",
+                  }}
                 >
-                  <Typography sx={{ fontSize: "2rem", fontWeight: "700", textAlign: "center"  }}>
+                  <Typography
+                    sx={{
+                      fontSize: "2rem",
+                      fontWeight: "700",
+                      textAlign: "center",
+                    }}
+                  >
                     {service.title}
                   </Typography>
                   <Typography
-                    sx={{ marginTop: "1rem", fontSize: theme.body_font, textAlign: "center", hyphens:'auto', textAlignLast:'center'}}
+                    sx={{
+                      marginTop: "1rem",
+                      fontSize: theme.body_font,
+                      textAlign: "center",
+                      textAlignLast: "center",
+                    }}
                   >
                     {service.content}
                   </Typography>
@@ -111,11 +124,5 @@ const Services = () => {
     </Box>
   );
 };
-
-
-
-
-
-
 
 export default Services;
