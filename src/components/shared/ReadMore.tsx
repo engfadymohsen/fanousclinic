@@ -1,4 +1,3 @@
-import { Box, Typography } from "@mui/material";
 import React, { useState } from "react";
 import theme from "../../theme/theme";
 

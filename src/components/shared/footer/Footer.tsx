@@ -75,6 +75,7 @@ const Footer = () => {
                   width: "16rem",
                   margin: { lg: "0", md: "0", sm: "2rem", xs: "2rem" },
                 }}
+                onClick={() => (document.documentElement.scrollTop = 0)}
               ></Box>
             </Link>
             <Box
@@ -169,6 +170,7 @@ const Footer = () => {
             >
               <Typography
                 sx={{ marginBottom: "1rem", fontSize: theme.body_font }}
+                onClick={() => (document.documentElement.scrollTop = 0)}
               >
                 About fanous Clinic
               </Typography>
@@ -179,17 +181,18 @@ const Footer = () => {
             >
               <Typography
                 sx={{ marginBottom: "1rem", fontSize: theme.body_font }}
+                onClick={() => (document.documentElement.scrollTop = 0)}
               >
                 Contact Us
               </Typography>
             </Link>
-            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            {/* <Link to="/" style={{ textDecoration: "none", color: "white" }}>
               <Typography
                 sx={{ marginBottom: "1rem", fontSize: theme.body_font }}
               >
                 Help Center
               </Typography>
-            </Link>
+            </Link> */}
             {/* <Link to='/' style={{textDecoration:'none', color:'white'}}><Typography sx={{marginBottom:'1rem',fontSize:theme.body_font}}>Our Policies</Typography></Link> */}
           </Box>
         </Grid>
