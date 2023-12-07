@@ -43,10 +43,11 @@ const OurFeatures = () => {
     <Box sx={{ width: "90%", margin: "20px auto" }}>
       <Typography
         sx={{
-          fontSize: "4rem",
+          fontSize:{ lg: "4rem", md: "4rem", sm: "2rem", xs: "2rem" },
           color: theme.primary_color,
           marginBottom: "20px",
           lineHeight: { xs: "1", md: "auto" },
+          textAlign: { lg: "left", md: "left", sm: "center", xs: "center" }
         }}
       >
         <span style={{ fontWeight: "600" }}>Our </span>Features
