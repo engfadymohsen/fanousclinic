@@ -72,12 +72,13 @@ const Swipper = ({
         sx={{
           position: "absolute",
           top: "50%",
-          left: { lg: "-2rem", md: "-2rem", sm: "0rem", xs: "0rem" },
+          left: { lg: "-2rem", md: "-2rem", sm: "-0.5rem", xs: "-0.5rem" },
           transform: "translateY(-50%)",
           fontSize: "2rem",
           color: theme.primary_color,
           cursor: i === 0 ? "default" : "pointer",
           opacity: i === 0 ? "0.4" : "1",
+          zIndex:'1000'
         }}
         onClick={() =>
           i !== 0 ? (setScroll(Scroll + 90 / NumOfElements), setI(i - 1)) : null
@@ -122,13 +123,14 @@ const Swipper = ({
       <KeyboardArrowRightRoundedIcon
         sx={{
           position: "absolute",
-          right: { lg: "-2rem", md: "-2rem", sm: "0rem", xs: "0rem" },
+          right: { lg: "-2rem", md: "-2rem", sm: "-0.5rem", xs: "-0.5rem" },
           top: "50%",
           transform: "translateY(-50%)",
           fontSize: "2rem",
           color: theme.primary_color,
           cursor: i === x.length - NumOfElements ? "default" : "pointer",
           opacity: i === x.length - NumOfElements ? "0.4" : "1",
+          zIndex:'1000'
         }}
         onClick={() =>
           i !== x.length - NumOfElements ? (setScroll(Scroll - 90 / NumOfElements), setI(i + 1)) : null
