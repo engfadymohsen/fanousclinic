@@ -29,7 +29,7 @@ const OurData = () => {
             title="Our Location"
             desc={
               <>
-                10926 South Tryon Street, Suite D,<br />
+                10926 South Tryon Street,<br />Suite D,
                 Charlotte, NC 28273
               </>
             }

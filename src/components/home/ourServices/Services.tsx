@@ -53,7 +53,7 @@ const Services = () => {
         </Typography>
       </Box>
       <Box sx={{ width: "90%", margin: "0 auto" }}>
-        <Swipper className="service-card" timeOut={5000} NumOfElements={1}>
+        <Swipper className="service-card" timeOut={5000} NumOfElements={1} mode={"light"}>
           {services.map((service) => (
             <Box
               sx={{

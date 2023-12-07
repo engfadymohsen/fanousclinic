@@ -9,6 +9,7 @@ interface SwipperType {
   className: string;
   timeOut: number;
   NumOfElements: number;
+  mode?: string;
 }
 
 export const controller = (
@@ -16,7 +17,8 @@ export const controller = (
   setScroll: Function,
   setI: Function,
   i: number,
-  NumOfElements: number
+  NumOfElements: number,
+  mode: string | undefined
 ) => {
   let content: ReactElement[] = [];
   for (let l = 0; l < children.length - (NumOfElements - 1); l++) {
@@ -24,7 +26,15 @@ export const controller = (
       <Box
         sx={{
           borderRadius: "50%",
-          backgroundColor: i === l ? "#000000dd" : "#00000050",
+          backgroundColor:
+            mode === "light"
+              ? i === l
+                ? "#ffffffdd"
+                : "#ffffff50"
+              : i === l
+              ? "#000000dd"
+              : "#00000050",
+
           width: "1rem",
           height: "1rem",
           cursor: "pointer",
@@ -45,6 +55,7 @@ const Swipper = ({
   className,
   timeOut,
   NumOfElements,
+  mode,
 }: SwipperType) => {
   const [Scroll, setScroll] = useState(0);
   const [i, setI] = useState(0);
@@ -72,13 +83,13 @@ const Swipper = ({
         sx={{
           position: "absolute",
           top: "50%",
-          left: { lg: "-2rem", md: "-2rem", sm: "-0.5rem", xs: "-0.5rem" },
+          left: { lg: "-3rem", md: "-3rem", sm: "-1rem", xs: "-1rem" },
           transform: "translateY(-50%)",
-          fontSize: "2rem",
-          color: theme.primary_color,
+          fontSize: {lg:"3rem",md:"3rem",sm:"2rem",xs:"2rem"},
+          color: mode === "light" ? "white" : theme.primary_color,
           cursor: i === 0 ? "default" : "pointer",
           opacity: i === 0 ? "0.4" : "1",
-          zIndex:'1000'
+          zIndex: "1000",
         }}
         onClick={() =>
           i !== 0 ? (setScroll(Scroll + 90 / NumOfElements), setI(i - 1)) : null
@@ -88,11 +99,11 @@ const Swipper = ({
         sx={{
           width: "100%",
           overflowX: "hidden",
-          margin: { lg: "0 1rem", md: "0 1rem", sm: "0", xs: "0" },
         }}
       >
         <Box
           sx={{
+            marginLeft: {lg:"-0.2rem",md:"-0.2rem",sm:"0rem",xs:"0rem",},
             transition: "0.3s",
             display: "flex",
             width: "fit-content",
@@ -114,26 +125,27 @@ const Swipper = ({
             justifyContent: "center",
             marginTop: "2rem",
             color: theme.primary_color,
-            cursor: "pointer",
           }}
         >
-          {controller(children, setScroll, setI, i, NumOfElements)}
+          {controller(children, setScroll, setI, i, NumOfElements, mode)}
         </Box>
       </Box>
       <KeyboardArrowRightRoundedIcon
         sx={{
           position: "absolute",
-          right: { lg: "-2rem", md: "-2rem", sm: "-0.5rem", xs: "-0.5rem" },
+          right: { lg: "-3rem", md: "-3rem", sm: "-1rem", xs: "-1rem" },
           top: "50%",
           transform: "translateY(-50%)",
-          fontSize: "2rem",
-          color: theme.primary_color,
+          fontSize: {lg:"3rem",md:"3rem",sm:"2rem",xs:"2rem"},
+          color: mode === "light" ? "white" : theme.primary_color,
           cursor: i === x.length - NumOfElements ? "default" : "pointer",
           opacity: i === x.length - NumOfElements ? "0.4" : "1",
-          zIndex:'1000'
+          zIndex: "1000",
         }}
         onClick={() =>
-          i !== x.length - NumOfElements ? (setScroll(Scroll - 90 / NumOfElements), setI(i + 1)) : null
+          i !== x.length - NumOfElements
+            ? (setScroll(Scroll - 90 / NumOfElements), setI(i + 1))
+            : null
         }
       />
     </Box>
