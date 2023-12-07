@@ -69,6 +69,7 @@ const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) =>
         setI(0);
       }
     }, timeOut);
+    console.log(Scroll)
 
     return () => clearInterval(interval);
   }, [Scroll, i, timeOut, x.length, NumOfElements]);
@@ -87,8 +88,8 @@ const Swipper = ({ children, className, timeOut, NumOfElements}: SwipperType) =>
           transform: {
             lg: `translateX(${Scroll}vw)`,
             md: `translateX(${Scroll}vw)`,
-            sm: `translateX(${Scroll * 2}vw)`,
-            xs: `translateX(${Scroll * 2}vw)`,
+            sm: `translateX(${Scroll}vw)`,
+            xs: `translateX(${Scroll}vw)`,
           },
         }}
       >

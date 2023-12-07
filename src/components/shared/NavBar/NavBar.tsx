@@ -12,16 +12,6 @@ import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 import theme from "../../../theme/theme";
 
-
-
-
-
-
-
-
-
-
-
 const pages = ["HOME", "ABOUT US", "CONTACT US"];
 
 function NavBar() {
@@ -85,9 +75,12 @@ function NavBar() {
                   onClick={(e) => handleCloseNavMenu(e.target)}
                   sx={{
                     my: 2,
-                    color: "black",
+                    color: theme.primary_color,
                     display: "block",
                     fontSize: "1.1rem",
+                    "&:hover": {
+                      // color: theme.sec_color,
+                    },
                   }}
                 >
                   {page}
@@ -99,7 +92,7 @@ function NavBar() {
             sx={{
               flexGrow: 1,
               justifyContent: "space-between",
-              display: { xs: "flex", md: "none" },
+              display: { lg: "none", md: "none", sm: "flex", xs: "flex" },
             }}
           >
             <Link to="/">
@@ -108,8 +101,8 @@ function NavBar() {
                 src="./assets/logo.png "
                 alt=""
                 sx={{
-                  width: "10rem",
-                  display: { xs: "flex", md: "none" },
+                  width: "7rem",
+                  display: { lg: "none", md: "none", sm: "flex", xs: "flex" },
                   mr: 1,
                 }}
               ></Box>
@@ -169,11 +162,5 @@ function NavBar() {
     </AppBar>
   );
 }
-
-
-
-
-
-
 
 export default NavBar;

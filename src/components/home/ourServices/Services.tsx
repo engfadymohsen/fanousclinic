@@ -54,7 +54,7 @@ const Services = () => {
         <Typography
           sx={{
             textAlign: "center",
-            fontSize: "4rem",
+            fontSize: {lg:"4rem", md:"4rem", sm:"2rem", xs:"2rem"},
             fontWeight: "600",
             color: "white",
           }}
@@ -63,10 +63,10 @@ const Services = () => {
         </Typography>
       </Box>
       <Box sx={{ width: "90%", margin: "0 auto" }}>
-        <Swipper className="service-card" timeOut={5000} NumOfElements={2}>
+        <Swipper className="service-card" timeOut={5000} NumOfElements={1} >
           {services.map((service) => (
             <Box
-              sx={{ width: "45vw", padding: "1rem ", boxSizing: "border-box" }}
+              sx={{ width: {lg:"45vw", md:"45vw", sm:"90vw", xs:"90vw"}, padding: "1rem ", boxSizing: "border-box" }}
             >
               <Box
                 className="service-card"
@@ -98,7 +98,7 @@ const Services = () => {
                     {service.title}
                   </Typography>
                   <Typography
-                    sx={{ marginTop: "1rem", fontSize: theme.body_font, textAlign: "center", hyphens:'auto', textAlignLast:'center' }}
+                    sx={{ marginTop: "1rem", fontSize: theme.body_font, textAlign: "center", hyphens:'auto', textAlignLast:'center'}}
                   >
                     {service.content}
                   </Typography>
