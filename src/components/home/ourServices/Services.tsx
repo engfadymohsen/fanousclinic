@@ -2,6 +2,7 @@ import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import theme from "../../../theme/theme";
 import Swipper from "../../shared/Swipper";
+import ReadMore from "../../shared/ReadMore";
 
 const Services = () => {
   const services = [
@@ -53,7 +54,12 @@ const Services = () => {
         </Typography>
       </Box>
       <Box sx={{ width: "90%", margin: "0 auto" }}>
-        <Swipper className="service-card" timeOut={5000} NumOfElements={1} mode={"light"}>
+        <Swipper
+          className="service-card"
+          timeOut={5000}
+          NumOfElements={2}
+          mode={"light"}
+        >
           {services.map((service) => (
             <Box
               sx={{
@@ -113,7 +119,7 @@ const Services = () => {
                       textAlignLast: "center",
                     }}
                   >
-                    {service.content}
+                    <ReadMore NumberOfChars={200}>{service.content}</ReadMore>
                   </Typography>
                 </Box>
               </Box>

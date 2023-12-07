@@ -18,10 +18,15 @@ export const controller = (
   setI: Function,
   i: number,
   NumOfElements: number,
-  mode: string | undefined
+  mode: string | undefined,
+  windowWidth: number
 ) => {
   let content: ReactElement[] = [];
-  for (let l = 0; l < children.length - (NumOfElements - 1); l++) {
+  for (
+    let l = 0;
+    l < children.length - ((windowWidth < 900 ? 1 : NumOfElements) - 1);
+    l++
+  ) {
     content.push(
       <Box
         sx={{
@@ -41,7 +46,7 @@ export const controller = (
           margin: "0 .5rem ",
         }}
         onClick={() => {
-          setScroll(l * (-90 / NumOfElements));
+          setScroll(l * (-90 / (windowWidth < 900 ? 1 : NumOfElements)));
           setI(l);
         }}
       ></Box>
@@ -57,25 +62,38 @@ const Swipper = ({
   NumOfElements,
   mode,
 }: SwipperType) => {
+  let [windowWidth, setWindowWidth] = useState<number>(window.innerWidth);
+  const reportWindowSize = () => {
+    setWindowWidth(window.innerWidth);
+  };
+  window.onresize = reportWindowSize;
   const [Scroll, setScroll] = useState(0);
   const [i, setI] = useState(0);
   const x = document.getElementsByClassName(className);
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setScroll(Scroll - 90 / NumOfElements);
-      if (i < x.length - NumOfElements) {
-        setScroll(Scroll - 90 / NumOfElements);
+      setScroll(Scroll - 90 / (windowWidth < 900 ? 1 : NumOfElements));
+      if (i < x.length - (windowWidth < 900 ? 1 : NumOfElements)) {
+        setScroll(Scroll - 90 / (windowWidth < 900 ? 1 : NumOfElements));
         setI(i + 1);
       } else {
-        setScroll(Scroll + ((x.length - NumOfElements) * 90) / NumOfElements);
+        setScroll(
+          Scroll +
+            ((x.length - (windowWidth < 900 ? 1 : NumOfElements)) * 90) /
+              (windowWidth < 900 ? 1 : NumOfElements)
+        );
         setI(0);
       }
     }, timeOut);
-    console.log(Scroll);
 
     return () => clearInterval(interval);
-  }, [Scroll, i, timeOut, x.length, NumOfElements]);
+  }, [Scroll, i, timeOut, x.length, NumOfElements, windowWidth]);
+
+  useEffect(() => {
+    setScroll(0);
+    setI(0);
+  }, [windowWidth]);
 
   return (
     <Box sx={{ position: "relative" }}>
@@ -85,14 +103,17 @@ const Swipper = ({
           top: "50%",
           left: { lg: "-3rem", md: "-3rem", sm: "-1rem", xs: "-1rem" },
           transform: "translateY(-50%)",
-          fontSize: {lg:"3rem",md:"3rem",sm:"2rem",xs:"2rem"},
+          fontSize: { lg: "3rem", md: "3rem", sm: "2rem", xs: "2rem" },
           color: mode === "light" ? "white" : theme.primary_color,
           cursor: i === 0 ? "default" : "pointer",
           opacity: i === 0 ? "0.4" : "1",
           zIndex: "1000",
         }}
         onClick={() =>
-          i !== 0 ? (setScroll(Scroll + 90 / NumOfElements), setI(i - 1)) : null
+          i !== 0
+            ? (setScroll(Scroll + 90 / (windowWidth < 900 ? 1 : NumOfElements)),
+              setI(i - 1))
+            : null
         }
       />
       <Box
@@ -103,7 +124,12 @@ const Swipper = ({
       >
         <Box
           sx={{
-            marginLeft: {lg:"-0.2rem",md:"-0.2rem",sm:"0rem",xs:"0rem",},
+            marginLeft: {
+              lg: "-0.2rem",
+              md: "-0.2rem",
+              sm: "0rem",
+              xs: "0rem",
+            },
             transition: "0.3s",
             display: "flex",
             width: "fit-content",
@@ -127,7 +153,15 @@ const Swipper = ({
             color: theme.primary_color,
           }}
         >
-          {controller(children, setScroll, setI, i, NumOfElements, mode)}
+          {controller(
+            children,
+            setScroll,
+            setI,
+            i,
+            NumOfElements,
+            mode,
+            windowWidth
+          )}
         </Box>
       </Box>
       <KeyboardArrowRightRoundedIcon
@@ -136,15 +170,22 @@ const Swipper = ({
           right: { lg: "-3rem", md: "-3rem", sm: "-1rem", xs: "-1rem" },
           top: "50%",
           transform: "translateY(-50%)",
-          fontSize: {lg:"3rem",md:"3rem",sm:"2rem",xs:"2rem"},
+          fontSize: { lg: "3rem", md: "3rem", sm: "2rem", xs: "2rem" },
           color: mode === "light" ? "white" : theme.primary_color,
-          cursor: i === x.length - NumOfElements ? "default" : "pointer",
-          opacity: i === x.length - NumOfElements ? "0.4" : "1",
+          cursor:
+            i === x.length - (windowWidth < 900 ? 1 : NumOfElements)
+              ? "default"
+              : "pointer",
+          opacity:
+            i === x.length - (windowWidth < 900 ? 1 : NumOfElements)
+              ? "0.4"
+              : "1",
           zIndex: "1000",
         }}
         onClick={() =>
-          i !== x.length - NumOfElements
-            ? (setScroll(Scroll - 90 / NumOfElements), setI(i + 1))
+          i !== x.length - (windowWidth < 900 ? 1 : NumOfElements)
+            ? (setScroll(Scroll - 90 / (windowWidth < 900 ? 1 : NumOfElements)),
+              setI(i + 1))
             : null
         }
       />
