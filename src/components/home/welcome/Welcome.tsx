@@ -13,7 +13,12 @@ const Welcome = () => {
   return (
     <Box
       sx={{
-        backgroundImage: "url(./assets/welcome.jpg)",
+        backgroundImage: {
+          lg: "url(./assets/welcome.jpg)",
+          md: "url(./assets/welcome.jpg)",
+          sm: "url(./assets/benefits.jpg)",
+          xs: "url(./assets/benefits.jpg)",
+        },
         backgroundSize: "cover",
         width: "100%",
         minHeight: "38rem",

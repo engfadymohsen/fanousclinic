@@ -8,7 +8,7 @@ import theme from '../../../theme/theme';
 const MVV = () => {
   return (
     <Box sx={{
-        width: '95%',
+        width: '90%',
         margin: '0 auto',
         padding: '1rem 0',
         boxSizing: 'border-box',
@@ -16,7 +16,7 @@ const MVV = () => {
         flexDirection: 'column', // Column direction to manage vertical spacing
         height: '100%', // Full height
     }}>
-        <Grid container spacing={3} sx={{ flex: 1 }}> {/* Flex 1 to fill the parent container */}
+        <Grid container spacing={4} sx={{ flex: 1 }}> {/* Flex 1 to fill the parent container */}
             <Grid item xs={12} sm={6} md={6} sx={{ display: 'flex' }}>
                 <Box sx={{
                     flex: 1, // Flex 1 to fill the grid item container

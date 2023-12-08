@@ -39,9 +39,7 @@ const Welcome = () => {
               fontSize: theme.body_font,
               fontWeight: "400",
               color: theme.primary_color,
-              textAlign: "justify",
-              textAlignLast: "center",
-              hyphens: "auto",
+              textAlign: "center",
               marginTop: "2rem",
             }}
           >

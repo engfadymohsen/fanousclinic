@@ -23,8 +23,8 @@ function NavBar() {
     setAnchorElNav(event.currentTarget);
   };
 
-  const handleCloseNavMenu = (e: any) => {
-    console.log(e);
+  const handleCloseNavMenu = () => {
+    setAnchorElNav(null);
   };
 
   return (
@@ -72,10 +72,10 @@ function NavBar() {
                 <Button
                   key={page}
                   id={page}
-                  onClick={(e) => handleCloseNavMenu(e.target)}
+                  onClick={(e) => handleCloseNavMenu()}
                   sx={{
                     my: 2,
-                    color: theme.primary_color,
+                    color: "#013b58",
                     display: "block",
                     fontSize: "1.1rem",
                     "&:hover": {
@@ -108,14 +108,13 @@ function NavBar() {
               ></Box>
             </Link>
             <IconButton
-              size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon sx={{ color: theme.primary_color, fontSize: "3rem" }} />
+              <MenuIcon sx={{ color: "#013b58", fontSize: "2rem" }} />
             </IconButton>
 
             <Menu

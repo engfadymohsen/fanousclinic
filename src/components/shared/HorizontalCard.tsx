@@ -68,8 +68,8 @@ const HorizontalCard = (props: any) => {
             fontSize: theme.body_font,
             fontWeight: "400",
             color: theme.primary_color,
-            textAlign:'justify',
-            hyphens:'auto',
+            textAlign:'left',
+
           }}
         >
           {props.docDisc}
