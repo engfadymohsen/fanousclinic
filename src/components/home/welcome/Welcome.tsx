@@ -3,9 +3,9 @@ import Typography from "@mui/material/Typography";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import FacebookRoundedIcon from "@mui/icons-material/FacebookRounded";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
-import AndroidIcon from "@mui/icons-material/Android";
+// import AndroidIcon from "@mui/icons-material/Android";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
-import AppleIcon from "@mui/icons-material/Apple";
+// import AppleIcon from "@mui/icons-material/Apple";
 import theme from "../../../theme/theme";
 import { Link } from "@mui/material";
 
@@ -94,6 +94,8 @@ const Welcome = () => {
               display: "flex",
             }}
           >
+
+          
             <Box sx={{ display: "flex", alignItems: "center" }}>
               <Box
                 id="sw-icons"
@@ -104,14 +106,16 @@ const Welcome = () => {
                   marginRight: "1rem",
                 }}
               >
-                <AndroidIcon />
-                <AppleIcon />
+              {/*
+                // <AndroidIcon />
+                // <AppleIcon />
+              */}
               </Box>
-              <Typography sx={{ fontSize: theme.body_font }}>
-                Fanous Clinic
-              </Typography>
+              <Typography sx={{ fontSize: theme.body_font }}> Contact Us </Typography>
             </Box>
           </Box>
+
+
           <Box sx={{ display: "flex" }}>
             <Link
               href="https://www.facebook.com/profile.php?id=61552333749894"

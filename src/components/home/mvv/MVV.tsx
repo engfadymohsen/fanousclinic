@@ -30,7 +30,7 @@ const MVV = () => {
                     <AdjustRoundedIcon sx={{ color: theme.primary_color, fontSize: '10rem' }} />
                     <Typography sx={{ fontSize: '2rem', fontWeight: '700' }}>Mission</Typography>
                     <Box sx={{ width: '50%', height: '2px', backgroundColor: theme.sec_color }}></Box>
-                    <Typography sx={{ textAlign: 'center', color: theme.primary_color, marginTop: '2.5rem', fontSize: theme.body_font, hyphens: 'auto' }}>
+                    <Typography sx={{ textAlign: 'center', color: theme.primary_color, marginTop: '2.5rem', fontSize: theme.body_font}}>
                         We empower our patients with personalized healthcare that is efficient and effective. We help them achieve their health goals and live their best lives.
                     </Typography>
                 </Box>
