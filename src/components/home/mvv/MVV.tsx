@@ -50,7 +50,7 @@ const MVV = () => {
                     <Typography sx={{ fontSize: '2rem', fontWeight: '700' }}>Our Vision</Typography>
                     <Box sx={{ width: '50%', height: '2px', backgroundColor: theme.sec_color }}></Box>
                     <Typography sx={{ textAlign: 'center', color: theme.primary_color, marginTop: '2.5rem', fontSize: theme.body_font, hyphens: 'auto' }}>
-                        “To Become the Most Recognized Healthcare company For Helping every person on earth to Realize the Way to a Healthy Life.”
+                        To Become the Most Recognized Healthcare company For Helping every person on earth to Realize the Way to a Healthy Life.
                     </Typography>
                 </Box>
             </Grid>           
