@@ -8,6 +8,7 @@ import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 // import AppleIcon from "@mui/icons-material/Apple";
 import theme from "../../../theme/theme";
 import { Link } from "@mui/material";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 
 const Welcome = () => {
   return (
@@ -82,39 +83,43 @@ const Welcome = () => {
             flexDirection: { lg: "row", md: "row", xs: "column", sm: "column" },
           }}
         >
-          <Box
-            sx={{
-              backgroundColor: theme.primary_color,
-              color: "white",
-              padding: "15px 20px",
-              marginRight: { lg: "20px", md: "20px", xs: "0", sm: "0" },
-              marginBottom: { lg: "0", md: "0", xs: "20px", sm: "20px" },
-              height: "20px",
-              borderRadius: "20px",
-              display: "flex",
-            }}
+          <Link
+            href="/contactus"
+            target="_blank"
+            rel="noopener"
+            sx={{textDecoration:'none'}}
           >
-
-          
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <Box
+            <Box
+              sx={{
+                backgroundColor: theme.primary_color,
+                color: "white",
+                padding: "15px 20px",
+                marginRight: { lg: "20px", md: "20px", xs: "0", sm: "0" },
+                marginBottom: { lg: "0", md: "0", xs: "20px", sm: "20px" },
+                height: "20px",
+                borderRadius: "20px",
+                display: "flex",
+              }}
+            >
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                {/* <Box
                 id="sw-icons"
                 sx={{
                   display: "flex",
-
+                  
                   justifyContent: "center",
                   marginRight: "1rem",
                 }}
               >
-              {/*
-                // <AndroidIcon />
-                // <AppleIcon />
-              */}
+                <AndroidIcon />
+                <AppleIcon />
+              </Box> */}
+                <Typography sx={{ fontSize: theme.body_font }}>
+                  Contact Us
+                </Typography>
               </Box>
-              <Typography sx={{ fontSize: theme.body_font }}> Contact Us </Typography>
             </Box>
-          </Box>
-
+          </Link>
 
           <Box sx={{ display: "flex" }}>
             <Link
@@ -132,6 +137,15 @@ const Welcome = () => {
               rel="noopener"
             >
               <InstagramIcon
+                sx={{ marginRight: "10px", color: theme.primary_color }}
+              />
+            </Link>
+            <Link
+              href="http://www.linkedin.com/company/fanousclinic"
+              target="_blank"
+              rel="noopener"
+            >
+              <LinkedInIcon
                 sx={{ marginRight: "10px", color: theme.primary_color }}
               />
             </Link>
