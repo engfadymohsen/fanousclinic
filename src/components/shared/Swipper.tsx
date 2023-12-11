@@ -170,9 +170,10 @@ const Swipper = ({
               cursor: "pointer",
             },
           }}
-          onTouchStart={(e: any) => (
-            setStartPoint(e.targetTouches[0].clientX), setIsMouseHeld(true)
-          )}
+          onTouchStart={(e: any) => {
+            setStartPoint(e.targetTouches[0].clientX);
+            setIsMouseHeld(true);
+          }}
           onTouchMove={(e) => touchSwipe(e)}
           onTouchEnd={() => handleMouseUp()}
 
