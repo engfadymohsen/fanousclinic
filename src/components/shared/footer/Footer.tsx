@@ -1,4 +1,4 @@
-import { Grid, Link as Mlink, SvgIcon, Typography } from "@mui/material";
+import { Grid, Link as MUILink, SvgIcon, Typography } from "@mui/material";
 import { Link } from "react-router-dom";
 
 import Box from "@mui/material/Box";
@@ -85,7 +85,7 @@ const Footer = () => {
                 width: "12rem",
               }}
             >
-              <Mlink
+              <MUILink
                 href="https://www.facebook.com/profile.php?id=61552333749894"
                 target="_blank"
                 rel="noopener"
@@ -93,22 +93,22 @@ const Footer = () => {
                 <FacebookRoundedIcon
                   sx={{ color: "white", fontSize: "1.65rem" }}
                 />
-              </Mlink>
-              <Mlink
+              </MUILink>
+              <MUILink
                 href="https://www.instagram.com/fanous.clinic"
                 target="_blank"
                 rel="noopener"
               >
                 <InstagramIcon sx={{ color: "white", fontSize: "1.65rem" }} />
-              </Mlink>
-              <Mlink
+              </MUILink>
+              <MUILink
                 href="http://www.linkedin.com/company/fanousclinic"
                 target="_blank"
                 rel="noopener"
               >
                 <LinkedInIcon sx={{ color: "white", fontSize: "1.65rem" }} />
-              </Mlink>
-              <Mlink
+              </MUILink>
+              <MUILink
                 href="https://www.tiktok.com/@fanous.clinic"
                 target="_blank"
                 rel="noopener"
@@ -116,14 +116,14 @@ const Footer = () => {
                 <SvgIcon sx={{ color: "white" }}>
                   <FontAwesomeIcon icon={faTiktok} />
                 </SvgIcon>
-              </Mlink>
-              <Mlink
+              </MUILink>
+              <MUILink
                 href="https://www.youtube.com/@fanousclinic"
                 target="_blank"
                 rel="noopener"
               >
                 <YouTubeIcon sx={{ color: "White", fontSize: "1.65rem" }} />
-              </Mlink>
+              </MUILink>
             </Box>
           </Box>
         </Grid>
@@ -235,7 +235,7 @@ const Footer = () => {
                 textAlign: { md: "left", xs: "center" },
               }}
             >
-              <Mlink
+              <MUILink
                 href="https://www.google.com/maps/place/10926+S+Tryon+St,+Charlotte,+NC+28273/data=!4m2!3m1!1s0x88569a474bb9509b:0x9a21640c57d737f1?sa=X&ved=2ahUKEwi2udzV_tWCAxULm7AFHQXPD2YQ8gF6BAgPEAA"
                 target="_blank"
                 rel="noopener"
@@ -259,8 +259,8 @@ const Footer = () => {
                     10926 South Tryon Street, Suite D, Charlotte, NC 28273
                   </Typography>
                 </Box>
-              </Mlink>
-              <Mlink
+              </MUILink>
+              <MUILink
                 href="tel:(704) 219-5384"
                 target="_blank"
                 rel="noopener"
@@ -284,8 +284,8 @@ const Footer = () => {
                     (704) 219-5384
                   </Typography>
                 </Box>
-              </Mlink>
-              <Mlink
+              </MUILink>
+              <MUILink
                 href="mailto:marketing@fanousclinic.com"
                 target="_blank"
                 rel="noopener"
@@ -309,7 +309,7 @@ const Footer = () => {
                     marketing@fanousclinic.com
                   </Typography>
                 </Box>
-              </Mlink>
+              </MUILink>
             </Box>
           </Box>
         </Grid>

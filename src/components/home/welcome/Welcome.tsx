@@ -7,8 +7,9 @@ import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import PlaceOutlinedIcon from "@mui/icons-material/PlaceOutlined";
 // import AppleIcon from "@mui/icons-material/Apple";
 import theme from "../../../theme/theme";
-import { Link } from "@mui/material";
+import { Link as MUILink } from "@mui/material";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
@@ -83,12 +84,7 @@ const Welcome = () => {
             flexDirection: { lg: "row", md: "row", xs: "column", sm: "column" },
           }}
         >
-          <Link
-            href="/contactus"
-            target="_blank"
-            rel="noopener"
-            sx={{textDecoration:'none'}}
-          >
+          <Link to="/contactus" style={{textDecoration:'none'}}>
             <Box
               sx={{
                 backgroundColor: theme.primary_color,
@@ -122,7 +118,7 @@ const Welcome = () => {
           </Link>
 
           <Box sx={{ display: "flex" }}>
-            <Link
+            <MUILink
               href="https://www.facebook.com/profile.php?id=61552333749894"
               target="_blank"
               rel="noopener"
@@ -130,8 +126,8 @@ const Welcome = () => {
               <FacebookRoundedIcon
                 sx={{ marginRight: "10px", color: theme.primary_color }}
               />
-            </Link>
-            <Link
+            </MUILink>
+            <MUILink
               href="https://www.instagram.com/fanous.clinic"
               target="_blank"
               rel="noopener"
@@ -139,8 +135,8 @@ const Welcome = () => {
               <InstagramIcon
                 sx={{ marginRight: "10px", color: theme.primary_color }}
               />
-            </Link>
-            <Link
+            </MUILink>
+            <MUILink
               href="http://www.linkedin.com/company/fanousclinic"
               target="_blank"
               rel="noopener"
@@ -148,8 +144,8 @@ const Welcome = () => {
               <LinkedInIcon
                 sx={{ marginRight: "10px", color: theme.primary_color }}
               />
-            </Link>
-            <Link
+            </MUILink>
+            <MUILink
               href="https://www.google.com/maps/place/10926+S+Tryon+St,+Charlotte,+NC+28273/data=!4m2!3m1!1s0x88569a474bb9509b:0x9a21640c57d737f1?sa=X&ved=2ahUKEwi2udzV_tWCAxULm7AFHQXPD2YQ8gF6BAgPEAA"
               target="_blank"
               rel="noopener"
@@ -157,8 +153,8 @@ const Welcome = () => {
               <PlaceOutlinedIcon
                 sx={{ marginRight: "10px", color: theme.primary_color }}
               />
-            </Link>
-            <Link
+            </MUILink>
+            <MUILink
               href="mailto:marketing@fanousclinic.com"
               target="_blank"
               rel="noopener"
@@ -166,7 +162,7 @@ const Welcome = () => {
               <MailOutlineIcon
                 sx={{ marginRight: "10px", color: theme.primary_color }}
               />
-            </Link>
+            </MUILink>
           </Box>
         </Box>
       </Box>
