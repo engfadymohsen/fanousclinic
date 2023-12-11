@@ -69,7 +69,36 @@ const Swipper = ({
   window.onresize = reportWindowSize;
   const [Scroll, setScroll] = useState(0);
   const [i, setI] = useState(0);
+
+  const [isMouseHeld, setIsMouseHeld] = useState<boolean>(false);
+  const [startPoint, setStartPoint] = useState<number>(0);
+  const [direction, setDirection] = useState<string>("");
+
   const x = document.getElementsByClassName(className);
+
+  const touchSwipe = (e: any) => {
+    if (isMouseHeld) {
+      if (e.targetTouches[0].clientX - startPoint > 0) {
+        setDirection("right");
+      } else {
+        setDirection("left");
+      }
+    }
+  };
+
+  const handleMouseUp = () => {
+    setIsMouseHeld(false);
+    if (direction === "right" && i !== 0) {
+      setScroll(Scroll + 90);
+      setI(i - 1);
+    } else if (
+      direction === "left" &&
+      i !== x.length - (windowWidth < 900 ? 1 : NumOfElements)
+    ) {
+      setScroll(Scroll - 90);
+      setI(i + 1);
+    }
+  };
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -138,8 +167,16 @@ const Swipper = ({
               md: `translateX(${Scroll}vw)`,
               sm: `translateX(${Scroll}vw)`,
               xs: `translateX(${Scroll}vw)`,
+              cursor: "pointer",
             },
           }}
+          onTouchStart={(e: any) => (
+            setStartPoint(e.targetTouches[0].clientX), setIsMouseHeld(true)
+          )}
+          onTouchMove={(e) => touchSwipe(e)}
+          onTouchEnd={() => handleMouseUp()}
+
+          // onTouch={() => console.log("ahhhhh")}
         >
           {children}
         </Box>
