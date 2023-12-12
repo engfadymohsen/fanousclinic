@@ -32,7 +32,7 @@ const MVV = () => {
                     <Box sx={{ width: '50%', height: '2px', backgroundColor: theme.sec_color }}></Box>
                     <Typography sx={{ textAlign: 'center', color: theme.primary_color, marginTop: '2.5rem', fontSize: theme.body_font}}>
                         We Empower Patients With Personalized Healthcare That is Efficient And Effective.
-                        We Guide Them to Achieve Their Health Goals by Discovering The Rruth of Wellness.
+                        We Guide Them to Achieve Their Health Goals by Discovering The Truth of Wellness.
                     </Typography>
                 </Box>
             </Grid>
@@ -50,7 +50,7 @@ const MVV = () => {
                     <Typography sx={{ fontSize: '2rem', fontWeight: '700' }}>Our Vision</Typography>
                     <Box sx={{ width: '50%', height: '2px', backgroundColor: theme.sec_color }}></Box>
                     <Typography sx={{ textAlign: 'center', color: theme.primary_color, marginTop: '2.5rem', fontSize: theme.body_font}}>
-                        To Become the Most Trusted Healthcare Company on Earth by Narturing Every Person to Realize the Way to Healthier Life.
+                        To Become the Most Trusted Healthcare Company on Earth by Nurturing Every Person to Realize the Way to Healthier Life.
                     </Typography>
                 </Box>
             </Grid>           
