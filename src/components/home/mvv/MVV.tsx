@@ -31,8 +31,8 @@ const MVV = () => {
                     <Typography sx={{ fontSize: '2rem', fontWeight: '700' }}>Mission</Typography>
                     <Box sx={{ width: '50%', height: '2px', backgroundColor: theme.sec_color }}></Box>
                     <Typography sx={{ textAlign: 'center', color: theme.primary_color, marginTop: '2.5rem', fontSize: theme.body_font}}>
-                        We empower patients with personalized healthcare that is efficient and effective.
-                        We guide them to achieve their health goals by discovering the truth of wellness
+                        We Empower Patients With Personalized Healthcare That is Efficient And Effective.
+                        We Guide Them to Achieve Their Health Goals by Discovering The Rruth of Wellness
                     </Typography>
                 </Box>
             </Grid>
