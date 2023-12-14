@@ -167,7 +167,6 @@ const Swipper = ({
               md: `translateX(${Scroll}vw)`,
               sm: `translateX(${Scroll}vw)`,
               xs: `translateX(${Scroll}vw)`,
-              cursor: "pointer",
             },
           }}
           onTouchStart={(e: any) => {
