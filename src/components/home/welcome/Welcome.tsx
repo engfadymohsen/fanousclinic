@@ -84,7 +84,7 @@ const Welcome = () => {
             flexDirection: { lg: "row", md: "row", xs: "column", sm: "column" },
           }}
         >
-          <Link to="https://fanousclinic.com/contactus" style={{textDecoration:'none'}}>
+          <Link to="/contactus" style={{textDecoration:'none'}}>
             <Box
               sx={{
                 backgroundColor: theme.primary_color,

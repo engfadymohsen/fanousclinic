@@ -1,16 +1,10 @@
 import theme from "../../theme/theme";
 
-
-
-
-
-
-
-
-
 const TextField = (props: any) => {
   return (
     <input
+      name={props.name}
+      id={props.id}
       type="text"
       placeholder={props.placeholder}
       required={props.required ? true : false}
@@ -27,10 +21,5 @@ const TextField = (props: any) => {
     />
   );
 };
-
-
-
-
-
 
 export default TextField;
