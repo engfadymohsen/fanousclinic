@@ -175,6 +175,7 @@ const Footer = () => {
                 About fanous Clinic
               </Typography>
             </Link>
+            {/* 
             <Link
               to="/contactus"
               style={{ textDecoration: "none", color: "white" }}
@@ -186,7 +187,7 @@ const Footer = () => {
                 Contact Us
               </Typography>
             </Link>
-            {/* <Link to="/" style={{ textDecoration: "none", color: "white" }}>
+            <Link to="/" style={{ textDecoration: "none", color: "white" }}>
               <Typography
                 sx={{ marginBottom: "1rem", fontSize: theme.body_font }}
               >
